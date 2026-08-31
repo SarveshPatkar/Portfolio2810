@@ -17,14 +17,10 @@
          GOOGLE FONTS
     ====================================================== -->
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
           rel="stylesheet">
 
     <!-- =====================================================
@@ -69,7 +65,6 @@
             --heading-font: "Playfair Display", serif;
             --name-font: "Lobster Two", cursive;
             --body-font: "DM Sans", sans-serif;
-
         }
 
 
@@ -78,21 +73,15 @@
         ====================================================== */
 
         * {
-
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
-
         }
-
 
         html {
-
             scroll-behavior: smooth;
-
         }
-
 
         body {
 
@@ -113,56 +102,39 @@
                 var(--bg);
 
             color: var(--text);
+
             font-family: var(--body-font);
+
             overflow-x: hidden;
-
         }
-
 
         body.menu-open {
-
             overflow: hidden;
-
         }
-
 
         a {
-
             text-decoration: none;
             color: inherit;
-
         }
-
 
         ul {
-
             list-style: none;
-
         }
-
 
         img {
-
             max-width: 100%;
             display: block;
-
         }
-
 
         button,
         input,
         textarea {
-
             font-family: inherit;
-
         }
 
-
         .container {
-
             width: min(92%, var(--max-width));
             margin: auto;
-
         }
 
 
@@ -181,7 +153,7 @@
 
                 radial-gradient(
                     circle,
-                    rgba(143, 107, 252, 0.192),
+                    rgba(143,107,252,0.192),
                     transparent 68%
                 );
 
@@ -194,7 +166,6 @@
             z-index: -1;
 
             filter: blur(10px);
-
         }
 
 
@@ -205,6 +176,7 @@
         #preloader {
 
             position: fixed;
+
             inset: 0;
 
             background: #050507;
@@ -212,20 +184,17 @@
             z-index: 9999;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             transition: 0.7s ease;
-
         }
-
 
         .loader {
-
             text-align: center;
-
         }
-
 
         .loader-name {
 
@@ -234,13 +203,12 @@
             font-size: 2.4rem;
 
             letter-spacing: 1px;
-
         }
-
 
         .loader-line {
 
             width: 0;
+
             height: 2px;
 
             background: var(--accent);
@@ -248,18 +216,13 @@
             margin: 18px auto 0;
 
             animation: loading 1.5s ease forwards;
-
         }
-
 
         @keyframes loading {
 
             to {
-
                 width: 180px;
-
             }
-
         }
 
 
@@ -279,9 +242,7 @@
             z-index: 1000;
 
             transition: 0.4s ease;
-
         }
-
 
         header.scrolled {
 
@@ -290,9 +251,7 @@
             backdrop-filter: blur(20px);
 
             border-bottom: 1px solid var(--border);
-
         }
-
 
         .navbar {
 
@@ -307,9 +266,7 @@
             align-items: center;
 
             justify-content: space-between;
-
         }
-
 
         .logo {
 
@@ -320,16 +277,11 @@
             letter-spacing: 1px;
 
             font-weight: 600;
-
         }
-
 
         .logo span {
-
             color: var(--accent);
-
         }
-
 
         .nav-links {
 
@@ -338,9 +290,7 @@
             align-items: center;
 
             gap: 34px;
-
         }
-
 
         .nav-links a {
 
@@ -351,9 +301,7 @@
             position: relative;
 
             transition: 0.3s ease;
-
         }
-
 
         .nav-links a::after {
 
@@ -362,33 +310,29 @@
             position: absolute;
 
             left: 0;
+
             bottom: -8px;
 
             width: 0;
+
             height: 1px;
 
             background: var(--accent);
 
             transition: 0.3s ease;
-
         }
-
 
         .nav-links a:hover,
         .nav-links a.active {
 
             color: white;
-
         }
-
 
         .nav-links a:hover::after,
         .nav-links a.active::after {
 
             width: 100%;
-
         }
-
 
         .menu-btn {
 
@@ -397,7 +341,6 @@
             font-size: 1.8rem;
 
             cursor: pointer;
-
         }
 
 
@@ -428,16 +371,11 @@
             transition: 0.45s ease;
 
             z-index: 2000;
-
         }
-
 
         .mobile-menu.open {
-
             right: 0;
-
         }
-
 
         .close-menu {
 
@@ -450,9 +388,7 @@
             font-size: 2rem;
 
             cursor: pointer;
-
         }
-
 
         .mobile-menu ul {
 
@@ -461,23 +397,17 @@
             flex-direction: column;
 
             gap: 26px;
-
         }
-
 
         .mobile-menu a {
 
             font-family: var(--heading-font);
 
             font-size: 1.5rem;
-
         }
 
-
         .mobile-menu a:hover {
-
             color: var(--accent);
-
         }
 
 
@@ -498,9 +428,7 @@
             overflow: hidden;
 
             padding-top: 80px;
-
         }
-
 
         .hero-grid {
 
@@ -511,20 +439,26 @@
             background-image:
 
                 linear-gradient(
-                    rgba(255, 255, 255, 0.145) 1px,
+                    rgba(255,255,255,0.145) 1px,
                     transparent 1px
                 ),
 
                 linear-gradient(
                     90deg,
-                    rgba(255, 255, 255, 0.145) 1px,
+                    rgba(255,255,255,0.145) 1px,
                     transparent 1px
                 );
 
             background-size: 70px 70px;
 
             mask-image:
+                linear-gradient(
+                    to bottom,
+                    black,
+                    transparent
+                );
 
+            -webkit-mask-image:
                 linear-gradient(
                     to bottom,
                     black,
@@ -532,15 +466,14 @@
                 );
 
             pointer-events: none;
-
         }
-
 
         .hero-orb {
 
             position: absolute;
 
             width: 550px;
+
             height: 550px;
 
             border-radius: 50%;
@@ -554,30 +487,23 @@
                 );
 
             top: 10%;
+
             right: -180px;
 
             animation: orbFloat 7s ease-in-out infinite;
-
         }
-
 
         @keyframes orbFloat {
 
             0%,
             100% {
-
                 transform: translateY(0);
-
             }
 
             50% {
-
                 transform: translateY(-35px);
-
             }
-
         }
-
 
         .hero-content {
 
@@ -586,9 +512,7 @@
             z-index: 2;
 
             max-width: 850px;
-
         }
-
 
         .eyebrow {
 
@@ -616,19 +540,17 @@
 
             animation:
                 heroReveal 0.9s 0.4s forwards;
-
         }
-
 
         .eyebrow::before {
 
             content: "";
 
             width: 38px;
+
             height: 1px;
 
             background: var(--accent);
-
         }
 
 
@@ -640,11 +562,7 @@
 
             font-family: var(--name-font);
 
-            font-size: clamp(
-                4.5rem,
-                10vw,
-                8.5rem
-            );
+            font-size: clamp(4.5rem, 10vw, 8.5rem);
 
             line-height: 0.9;
 
@@ -653,9 +571,7 @@
             letter-spacing: -2px;
 
             margin-bottom: 35px;
-
         }
-
 
         .hero-title .name-line {
 
@@ -670,30 +586,19 @@
                 1s
                 cubic-bezier(.2,.8,.2,1)
                 forwards;
-
         }
-
 
         .hero-title .name-line:nth-child(1) {
-
             animation-delay: 0.65s;
-
         }
-
 
         .hero-title .name-line:nth-child(2) {
-
             animation-delay: 0.9s;
-
         }
-
 
         .hero-title .name-line:first-child {
-
             color: #f5f5f5;
-
         }
-
 
         .hero-title .accent-name {
 
@@ -716,9 +621,7 @@
                 1.9s
                 ease-in-out
                 infinite;
-
         }
-
 
         @keyframes patkarColor {
 
@@ -729,7 +632,6 @@
                 text-shadow:
                     0 0 25px
                     rgba(167,139,250,0.15);
-
             }
 
             33.33% {
@@ -739,7 +641,6 @@
                 text-shadow:
                     0 0 30px
                     rgba(129,140,248,0.20);
-
             }
 
             66.66% {
@@ -749,7 +650,6 @@
                 text-shadow:
                     0 0 30px
                     rgba(96,165,250,0.20);
-
             }
 
             100% {
@@ -759,23 +659,18 @@
                 text-shadow:
                     0 0 25px
                     rgba(167,139,250,0.15);
-
             }
-
         }
-
 
         @keyframes nameReveal {
 
             to {
 
                 opacity: 1;
+
                 transform: translateY(0);
-
             }
-
         }
-
 
         .hero-description {
 
@@ -798,9 +693,7 @@
                 0.9s
                 1.15s
                 forwards;
-
         }
-
 
         .hero-buttons {
 
@@ -819,19 +712,16 @@
                 0.9s
                 1.35s
                 forwards;
-
         }
-
 
         @keyframes heroReveal {
 
             to {
 
                 opacity: 1;
+
                 transform: translateY(0);
-
             }
-
         }
 
 
@@ -844,6 +734,7 @@
             display: inline-flex;
 
             align-items: center;
+
             justify-content: center;
 
             gap: 10px;
@@ -861,18 +752,14 @@
             transition: 0.35s ease;
 
             cursor: pointer;
-
         }
-
 
         .btn-primary {
 
             background: var(--accent);
 
             color: #111;
-
         }
-
 
         .btn-primary:hover {
 
@@ -885,9 +772,7 @@
             box-shadow:
                 0 15px 35px
                 rgba(167,139,250,0.12);
-
         }
-
 
         .btn-outline {
 
@@ -895,9 +780,7 @@
 
             border-color:
                 rgba(255,255,255,0.2);
-
         }
-
 
         .btn-outline:hover {
 
@@ -906,7 +789,6 @@
             color: var(--accent);
 
             transform: translateY(-4px);
-
         }
 
 
@@ -919,6 +801,7 @@
             position: fixed;
 
             right: 28px;
+
             top: 50%;
 
             transform: translateY(-50%);
@@ -938,9 +821,7 @@
                 forwards;
 
             z-index: 100;
-
         }
-
 
         @keyframes socialReveal {
 
@@ -950,7 +831,6 @@
 
                 transform:
                     translate(25px,-50%);
-
             }
 
             to {
@@ -959,15 +839,13 @@
 
                 transform:
                     translate(0,-50%);
-
             }
-
         }
-
 
         .hero-social a {
 
             width: 46px;
+
             height: 46px;
 
             border:
@@ -982,14 +860,13 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             color: var(--text-soft);
 
             transition: 0.35s ease;
-
         }
-
 
         .hero-social a:hover {
 
@@ -1002,7 +879,6 @@
             box-shadow:
                 0 10px 30px
                 rgba(167,139,250,0.12);
-
         }
 
 
@@ -1015,9 +891,7 @@
             position: relative;
 
             padding: 120px 0;
-
         }
-
 
         .section-label {
 
@@ -1032,9 +906,7 @@
             text-transform: uppercase;
 
             margin-bottom: 15px;
-
         }
-
 
         .section-title {
 
@@ -1048,9 +920,7 @@
             line-height: 1.1;
 
             margin-bottom: 25px;
-
         }
-
 
         .section-description {
 
@@ -1059,7 +929,6 @@
             line-height: 1.9;
 
             max-width: 700px;
-
         }
 
 
@@ -1077,22 +946,19 @@
             gap: 80px;
 
             align-items: center;
-
         }
-
 
         .about-image {
-
             position: relative;
-
         }
-
 
         .about-image img {
 
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
+            border: none !important;
+
+            outline: none !important;
+
+            box-shadow: none !important;
 
             width: 100%;
 
@@ -1105,45 +971,14 @@
             filter: grayscale(20%);
 
             transition: 0.5s ease;
-
         }
-
 
         .about-image:hover img {
 
             transform: translateY(-8px);
 
             filter: grayscale(0);
-
-            border-color:
-                rgba(167,139,250,0.4);
-
         }
-
-
-        .about-image::before {
-            
-            display: none;
-
-            content: "";
-
-            position: absolute;
-
-            width: 80%;
-            height: 90%;
-
-            border:
-                1px solid var(--accent);
-
-            left: 5%;
-            top: 8%;
-
-            z-index: -1;
-
-            opacity: 0.25;
-
-        }
-
 
         .about-text {
 
@@ -1152,9 +987,7 @@
             line-height: 1.9;
 
             margin-bottom: 30px;
-
         }
-
 
         .about-highlights {
 
@@ -1164,9 +997,7 @@
                 repeat(3,1fr);
 
             gap: 15px;
-
         }
-
 
         .highlight {
 
@@ -1178,9 +1009,7 @@
                 1px solid var(--border);
 
             transition: 0.3s ease;
-
         }
-
 
         .highlight:hover {
 
@@ -1190,9 +1019,7 @@
 
             border-color:
                 rgba(167,139,250,0.3);
-
         }
-
 
         .highlight i {
 
@@ -1201,18 +1028,14 @@
             color: var(--accent);
 
             margin-bottom: 12px;
-
         }
-
 
         .highlight h4 {
 
             font-size: 0.9rem;
 
             margin-bottom: 6px;
-
         }
-
 
         .highlight p {
 
@@ -1221,7 +1044,6 @@
             font-size: 0.75rem;
 
             line-height: 1.5;
-
         }
 
 
@@ -1234,9 +1056,7 @@
             background: var(--bg-section);
 
             overflow: hidden;
-
         }
-
 
         .skills-heading {
 
@@ -1249,18 +1069,14 @@
             gap: 30px;
 
             margin-bottom: 55px;
-
         }
-
 
         .slider-window {
 
             overflow: hidden;
 
             width: 100%;
-
         }
-
 
         .skills-track {
 
@@ -1270,17 +1086,17 @@
 
             width: max-content;
 
-            animation: skillsScroll 30s linear infinite;
-
+            animation:
+                skillsScroll
+                30s
+                linear
+                infinite;
         }
-
 
         .skills-track:hover {
 
             animation-play-state: paused;
-
         }
-
 
         .skill-card {
 
@@ -1306,9 +1122,7 @@
             flex-shrink: 0;
 
             transition: 0.35s ease;
-
         }
-
 
         .skill-card:hover {
 
@@ -1316,9 +1130,7 @@
 
             border-color:
                 rgba(167,139,250,0.45);
-
         }
-
 
         .skill-card i {
 
@@ -1327,15 +1139,14 @@
             color: var(--accent);
 
             margin-bottom: 30px;
-
         }
-
 
         .skill-number {
 
             position: absolute;
 
             right: 20px;
+
             top: 20px;
 
             color:
@@ -1344,9 +1155,7 @@
             font-size: 2rem;
 
             font-weight: 700;
-
         }
-
 
         .skill-card h3 {
 
@@ -1357,9 +1166,7 @@
             font-weight: 500;
 
             margin-bottom: 8px;
-
         }
-
 
         .skill-card p {
 
@@ -1368,24 +1175,17 @@
             font-size: 0.78rem;
 
             line-height: 1.5;
-
         }
-
 
         @keyframes skillsScroll {
 
             from {
-
                 transform: translateX(0);
-
             }
 
             to {
-
                 transform: translateX(-50%);
-
             }
-
         }
 
 
@@ -1394,18 +1194,12 @@
         ====================================================== */
 
         .experience-intro {
-
             margin-bottom: 70px;
-
         }
-
 
         .experience-timeline {
-
             position: relative;
-
         }
-
 
         .experience-timeline::before {
 
@@ -1416,6 +1210,7 @@
             left: 17px;
 
             top: 0;
+
             bottom: 0;
 
             width: 1px;
@@ -1427,9 +1222,7 @@
                     var(--accent),
                     rgba(167,139,250,0.05)
                 );
-
         }
-
 
         .experience-item {
 
@@ -1438,18 +1231,18 @@
             padding-left: 65px;
 
             margin-bottom: 80px;
-
         }
-
 
         .experience-dot {
 
             position: absolute;
 
             left: 8px;
+
             top: 4px;
 
             width: 19px;
+
             height: 19px;
 
             background: var(--bg);
@@ -1462,7 +1255,6 @@
             box-shadow:
                 0 0 0 5px
                 rgba(167,139,250,0.08);
-
         }
 
 
@@ -1473,18 +1265,20 @@
         .company-logo {
 
             width: 65px;
+
             height: 65px;
 
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             border:
                 1px solid var(--border);
 
             background:
-                rgba(255, 255, 255, 0.778);
+                rgba(255,255,255,0.778);
 
             margin-bottom: 18px;
 
@@ -1495,28 +1289,22 @@
             color: var(--accent);
 
             overflow: hidden;
-
         }
-
 
         .company-logo img {
 
             width: 100%;
+
             height: 100%;
 
             object-fit: contain;
 
             padding: 8px;
-
         }
-
 
         .company-logo:hover {
-
             border-color: var(--accent);
-
         }
-
 
         .experience-header {
 
@@ -1527,9 +1315,7 @@
             gap: 30px;
 
             margin-bottom: 25px;
-
         }
-
 
         .experience-role {
 
@@ -1538,9 +1324,7 @@
             font-size: 1.8rem;
 
             font-weight: 500;
-
         }
-
 
         .experience-company {
 
@@ -1549,9 +1333,7 @@
             font-size: 0.9rem;
 
             margin-top: 7px;
-
         }
-
 
         .experience-date {
 
@@ -1562,9 +1344,7 @@
             font-size: 0.8rem;
 
             letter-spacing: 1px;
-
         }
-
 
         .experience-content {
 
@@ -1576,9 +1356,7 @@
             padding: 30px;
 
             transition: 0.35s ease;
-
         }
-
 
         .experience-content:hover {
 
@@ -1586,18 +1364,14 @@
 
             border-color:
                 rgba(167,139,250,0.25);
-
         }
-
 
         .experience-content ul {
 
             display: grid;
 
             gap: 14px;
-
         }
-
 
         .experience-content li {
 
@@ -1610,9 +1384,7 @@
             font-size: 0.9rem;
 
             line-height: 1.75;
-
         }
-
 
         .experience-content li::before {
 
@@ -1625,7 +1397,6 @@
             color: var(--accent);
 
             font-size: 1.2rem;
-
         }
 
 
@@ -1634,11 +1405,8 @@
         ====================================================== */
 
         .roles-section {
-
             margin-top: 30px;
-
         }
-
 
         .roles-heading {
 
@@ -1651,9 +1419,7 @@
             gap: 20px;
 
             margin-bottom: 15px;
-
         }
-
 
         .roles-title {
 
@@ -1666,9 +1432,7 @@
             color: var(--accent-light);
 
             font-weight: 700;
-
         }
-
 
         .roles-hint {
 
@@ -1681,9 +1445,7 @@
             align-items: center;
 
             gap: 6px;
-
         }
-
 
         .roles-slider {
 
@@ -1712,9 +1474,7 @@
                     black 96%,
                     transparent
                 );
-
         }
-
 
         .roles-track {
 
@@ -1729,28 +1489,15 @@
                 60s
                 linear
                 infinite;
-
         }
-
-
-        /* =====================================================
-           JOVE ONLY - SLOWER ROLE SLIDER
-        ====================================================== */
 
         .experience-item:first-child .roles-track {
-
             animation-duration: 150s;
-
         }
-
-
 
         .roles-slider:hover .roles-track {
-
             animation-play-state: paused;
-
         }
-
 
         .role-tag {
 
@@ -1775,15 +1522,14 @@
             border-radius: 30px;
 
             transition: 0.3s ease;
-
         }
-
 
         .role-tag::before {
 
             content: "";
 
             width: 5px;
+
             height: 5px;
 
             background: var(--accent);
@@ -1793,9 +1539,7 @@
             margin-right: 8px;
 
             opacity: 0.7;
-
         }
-
 
         .role-tag:hover {
 
@@ -1807,24 +1551,17 @@
                 rgba(167,139,250,0.08);
 
             transform: translateY(-2px);
-
         }
-
 
         @keyframes rolesScroll {
 
             from {
-
                 transform: translateX(0);
-
             }
 
             to {
-
                 transform: translateX(-50%);
-
             }
-
         }
 
 
@@ -1844,9 +1581,7 @@
             background: var(--border);
 
             margin-top: 20px;
-
         }
-
 
         .stat {
 
@@ -1855,9 +1590,7 @@
             padding: 35px 25px;
 
             text-align: center;
-
         }
-
 
         .stat-number {
 
@@ -1866,9 +1599,7 @@
             font-size: 2.8rem;
 
             color: var(--accent);
-
         }
-
 
         .stat p {
 
@@ -1877,77 +1608,321 @@
             font-size: 0.75rem;
 
             margin-top: 8px;
-
         }
 
 
         /* =====================================================
-           CERTIFICATIONS
+           CERTIFICATIONS & CERTIFICATE SLIDER
         ====================================================== */
 
-        .certification-box {
+        #certifications {
 
-            border:
-                1px dashed
-                rgba(167,139,250,0.3);
+            background: var(--bg-section);
+        }
 
-            min-height: 230px;
+        .cert-slider-wrapper {
+            position: relative;
+            width: 100%;
+            margin-top: 45px;
+            overflow: hidden;
+            padding: 15px 0 25px;
+        }
 
+        .cert-slider-track {
             display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            text-align: center;
-
-            padding: 30px;
-
-            margin-top: 35px;
-
-            transition: 0.3s ease;
-
+            transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+            gap: 30px;
         }
 
-
-        .certification-box:hover {
-
-            border-color: var(--accent);
-
-            background:
-                rgba(167,139,250,0.025);
-
+        .cert-slide {
+            min-width: 100%;
+            box-sizing: border-box;
         }
 
-
-        .certification-box i {
-
-            font-size: 2.5rem;
-
+        .cert-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(5, 5, 7, 0.85);
+            border: 1px solid var(--accent);
             color: var(--accent);
-
-            margin-bottom: 15px;
-
-        }
-
-
-        .certification-box h3 {
-
-            font-family: var(--heading-font);
-
             font-size: 1.5rem;
-
-            margin-bottom: 8px;
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: 0.3s ease;
+            backdrop-filter: blur(10px);
         }
 
+        .cert-nav-btn:hover {
+            background: var(--accent);
+            color: #111;
+            box-shadow: 0 0 15px rgba(167, 139, 250, 0.4);
+        }
 
-        .certification-box p {
+        .cert-prev { left: 10px; }
+        .cert-next { right: 10px; }
 
-            color: var(--text-muted);
+        .cert-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 25px;
+        }
 
+        .cert-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .cert-dot.active {
+            background: var(--accent);
+            width: 28px;
+            border-radius: 10px;
+        }
+
+        /* REAL CERTIFICATE DISPLAY BOARD */
+
+        .real-certificate-card {
+            background: #ffffff;
+            color: #1a1a1a;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            font-family: 'Open Sans', sans-serif;
+            border: 1px solid rgba(255,255,255,0.1);
+            overflow: hidden;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .cert-keka-wrapper {
+            padding: 40px 50px 30px;
+            background: #ffffff;
+        }
+
+        .cert-keka-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .keka-logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1e1e1e;
+            letter-spacing: -1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .keka-logo-text span {
+            color: #0088ff;
+            font-size: 2.5rem;
+            line-height: 0;
+            margin-left: 2px;
+        }
+
+        .cert-keka-banner {
+            background: linear-gradient(90deg, #0088ff 0%, #00aaff 100%);
+            padding: 18px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 25px;
+            margin: 0 -50px 35px -50px;
+            position: relative;
+            box-shadow: inset 0 -2px 5px rgba(0,0,0,0.1);
+        }
+
+        .cert-badge-seal {
+            width: 85px;
+            height: 85px;
+            background: radial-gradient(circle, #e6e6e6 0%, #a8a8a8 100%);
+            border-radius: 50%;
+            border: 3px dashed #777;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+            flex-shrink: 0;
+            color: #222;
+            text-align: center;
+        }
+
+        .cert-badge-seal .stars {
+            color: #333;
+            font-size: 0.6rem;
+            letter-spacing: 2px;
+        }
+
+        .cert-badge-seal .certified-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            border-top: 1px solid #555;
+            border-bottom: 1px solid #555;
+            padding: 2px 0;
+            margin: 2px 0;
+            width: 90%;
+        }
+
+        .cert-banner-text {
+            color: #ffffff;
+        }
+
+        .cert-banner-text h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+            color: #ffffff;
+        }
+
+        .cert-banner-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            color: #ffffff;
+        }
+
+        .cert-keka-body {
+            text-align: center;
+            padding: 10px 20px 30px;
+        }
+
+        .cert-divider-line {
+            height: 1px;
+            background: #d1d5db;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .cert-recipient-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 12px;
+        }
+
+        .cert-award-text {
+            font-size: 1.05rem;
+            color: #4b5563;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cert-award-text strong {
+            color: #111827;
+            font-weight: 700;
+        }
+
+        .cert-keka-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+
+        .cert-partner-logos {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .k-academy-logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: #111;
+        }
+
+        .k-academy-logo .k-symbol {
+            font-size: 2rem;
+            color: #0088ff;
+            margin-right: 2px;
+        }
+
+        .partner-text {
             font-size: 0.85rem;
+            color: #6b7280;
+            font-style: italic;
+        }
 
+        .ee-academy-logo {
+            background: #000;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 2px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .ee-academy-logo .ee-title {
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            display: block;
+            line-height: 1;
+        }
+
+        .ee-academy-logo .ee-sub {
+            background: #eab308;
+            color: #000;
+            font-size: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 1px 4px;
+            display: inline-block;
+            margin-top: 3px;
+        }
+
+        .cert-action-bar {
+            background: #111319;
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .cert-meta-info {
+            display: flex;
+            gap: 25px;
+        }
+
+        .cert-meta-item span {
+            display: block;
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cert-meta-item strong {
+            font-size: 0.85rem;
+            color: var(--text-soft);
         }
 
 
@@ -1964,9 +1939,7 @@
                     rgba(167,139,250,0.08),
                     transparent 30%
                 );
-
         }
-
 
         .contact-grid {
 
@@ -1976,9 +1949,7 @@
                 0.9fr 1.1fr;
 
             gap: 80px;
-
         }
-
 
         .contact-info {
 
@@ -1987,9 +1958,7 @@
             gap: 20px;
 
             margin-top: 35px;
-
         }
-
 
         .contact-item {
 
@@ -1998,13 +1967,12 @@
             align-items: center;
 
             gap: 16px;
-
         }
-
 
         .contact-item i {
 
             width: 44px;
+
             height: 44px;
 
             border:
@@ -2013,6 +1981,7 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             color: var(--accent);
@@ -2020,9 +1989,7 @@
             font-size: 1.2rem;
 
             flex-shrink: 0;
-
         }
-
 
         .contact-item div span {
 
@@ -2033,16 +2000,12 @@
             font-size: 0.7rem;
 
             margin-bottom: 3px;
-
         }
-
 
         .contact-item div p {
 
             font-size: 0.85rem;
-
         }
-
 
         .social-icons {
 
@@ -2051,13 +2014,12 @@
             gap: 10px;
 
             margin-top: 30px;
-
         }
-
 
         .social-icons a {
 
             width: 42px;
+
             height: 42px;
 
             border:
@@ -2066,14 +2028,13 @@
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
             color: var(--text-soft);
 
             transition: 0.3s ease;
-
         }
-
 
         .social-icons a:hover {
 
@@ -2082,9 +2043,7 @@
             border-color: var(--accent);
 
             transform: translateY(-4px);
-
         }
-
 
         .contact-form {
 
@@ -2094,16 +2053,11 @@
                 1px solid var(--border);
 
             background: var(--card);
-
         }
-
 
         .form-group {
-
             margin-bottom: 18px;
-
         }
-
 
         .form-group input,
         .form-group textarea {
@@ -2127,17 +2081,13 @@
             font-size: 0.85rem;
 
             transition: 0.3s ease;
-
         }
-
 
         .form-group input::placeholder,
         .form-group textarea::placeholder {
 
             color: #676d77;
-
         }
-
 
         .form-group input:focus,
         .form-group textarea:focus {
@@ -2147,18 +2097,14 @@
 
             background:
                 rgba(255,255,255,0.04);
-
         }
-
 
         .form-group textarea {
 
             resize: vertical;
 
             min-height: 150px;
-
         }
-
 
         #msg {
 
@@ -2169,7 +2115,6 @@
             color: #9be7b0;
 
             font-size: 0.8rem;
-
         }
 
 
@@ -2191,27 +2136,21 @@
             align-items: center;
 
             gap: 20px;
-
         }
-
 
         footer p {
 
             color: var(--text-muted);
 
             font-size: 0.75rem;
-
         }
-
 
         .footer-links {
 
             display: flex;
 
             gap: 20px;
-
         }
-
 
         .footer-links a {
 
@@ -2220,14 +2159,11 @@
             font-size: 0.75rem;
 
             transition: 0.3s ease;
-
         }
-
 
         .footer-links a:hover {
 
             color: var(--accent);
-
         }
 
 
@@ -2248,16 +2184,13 @@
                 transform
                 0.8s
                 cubic-bezier(.2,.8,.2,1);
-
         }
-
 
         .reveal.active {
 
             opacity: 1;
 
             transform: translateY(0);
-
         }
 
 
@@ -2268,18 +2201,12 @@
         @media(max-width: 900px) {
 
             .nav-links {
-
                 display: none;
-
             }
-
 
             .menu-btn {
-
                 display: block;
-
             }
-
 
             .hero-social {
 
@@ -2298,9 +2225,7 @@
                 opacity: 1;
 
                 animation: none;
-
             }
-
 
             .about-grid,
             .contact-grid {
@@ -2308,40 +2233,61 @@
                 grid-template-columns: 1fr;
 
                 gap: 50px;
-
             }
-
 
             .about-image {
-
                 max-width: 450px;
-
             }
-
 
             .stats {
 
                 grid-template-columns:
                     repeat(2,1fr);
-
             }
-
 
             .experience-header {
 
                 flex-direction: column;
 
                 gap: 10px;
-
             }
-
 
             .roles-hint {
-
                 display: none;
-
             }
 
+            .cert-keka-wrapper {
+                padding: 30px 20px 20px;
+            }
+
+            .cert-keka-banner {
+                margin: 0 -20px 25px -20px;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .cert-badge-seal {
+                width: 65px;
+                height: 65px;
+            }
+
+            .cert-banner-text h2 {
+                font-size: 1.1rem;
+            }
+
+            .cert-banner-text h1 {
+                font-size: 1.4rem;
+            }
+
+            .cert-recipient-name {
+                font-size: 1.4rem;
+            }
+
+            .cert-action-bar {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
         }
 
 
@@ -2352,18 +2298,12 @@
         @media(max-width: 600px) {
 
             section {
-
                 padding: 85px 0;
-
             }
-
 
             .navbar {
-
                 height: 70px;
-
             }
-
 
             .hero-title {
 
@@ -2375,125 +2315,77 @@
                     );
 
                 letter-spacing: -1px;
-
             }
-
 
             .hero-description {
-
                 font-size: 0.9rem;
-
             }
-
 
             .hero-buttons {
 
                 flex-direction: column;
 
                 align-items: flex-start;
-
             }
-
 
             .btn {
-
                 width: 100%;
-
             }
-
 
             .hero-social {
-
                 margin-top: 35px;
-
             }
-
 
             .hero-social a {
 
                 width: 42px;
+
                 height: 42px;
-
             }
-
 
             .about-highlights {
-
                 grid-template-columns: 1fr;
-
             }
-
 
             .skills-heading {
-
                 display: block;
-
             }
 
-
-            .skills-heading
-            .section-description {
-
+            .skills-heading .section-description {
                 margin-top: 20px;
-
             }
-
 
             .skill-card {
-
                 width: 240px;
-
             }
-
 
             .experience-item {
-
                 padding-left: 45px;
-
             }
-
 
             .experience-timeline::before {
-
                 left: 8px;
-
             }
-
 
             .experience-dot {
-
                 left: 0;
-
             }
-
 
             .experience-role {
-
                 font-size: 1.4rem;
-
             }
-
 
             .experience-content {
-
                 padding: 22px;
-
             }
-
 
             .experience-content li {
-
                 font-size: 0.83rem;
-
             }
-
 
             .roles-section {
-
                 margin-top: 25px;
-
             }
-
 
             .roles-slider {
 
@@ -2504,96 +2396,58 @@
                 -webkit-mask-image: none;
 
                 scrollbar-width: none;
-
             }
-
 
             .roles-slider::-webkit-scrollbar {
-
                 display: none;
-
             }
-
-
-            /*
-               DEFAULT ROLE SPEED FOR MOBILE
-               Emonics + Lucia remain 60s
-            */
 
             .roles-track {
-
                 animation-duration: 60s;
-
             }
-
-
-            /*
-               JOVE ROLE SPEED FOR MOBILE
-               Jove remains slower at 120s
-            */
 
             .experience-item:first-child .roles-track {
-
                 animation-duration: 150s;
-
             }
-
 
             .role-tag {
 
                 font-size: 0.65rem;
 
                 padding: 8px 12px;
-
             }
-
 
             .stats {
 
                 grid-template-columns:
                     1fr 1fr;
-
             }
-
 
             .stat {
-
                 padding: 25px 15px;
-
             }
-
 
             .stat-number {
-
                 font-size: 2.1rem;
-
             }
-
 
             .contact-form {
-
                 padding: 22px;
-
             }
-
 
             footer {
 
                 flex-direction: column;
 
                 text-align: center;
-
             }
-
 
             .footer-links {
 
                 flex-wrap: wrap;
 
                 justify-content: center;
-
             }
-
         }
 
 
@@ -2604,11 +2458,8 @@
         @media(prefers-reduced-motion: reduce) {
 
             * {
-
                 scroll-behavior: auto !important;
-
             }
-
 
             .skills-track,
             .roles-track,
@@ -2624,9 +2475,7 @@
                 opacity: 1 !important;
 
                 transform: none !important;
-
             }
-
 
             .reveal {
 
@@ -2635,9 +2484,7 @@
                 transform: none;
 
                 transition: none;
-
             }
-
         }
 
     </style>
@@ -2648,1908 +2495,217 @@
 <body>
 
 
-<!-- =========================================================
-     PRELOADER
-========================================================== -->
+    <!-- =========================================================
+         PRELOADER
+    ========================================================== -->
 
-<div id="preloader">
+    <div id="preloader">
 
-    <div class="loader">
+        <div class="loader">
 
-        <div class="loader-name">
-            Sarvesh Patkar
+            <div class="loader-name">
+                Sarvesh Patkar
+            </div>
+
+            <div class="loader-line"></div>
+
         </div>
-
-        <div class="loader-line"></div>
 
     </div>
 
-</div>
+
+    <!-- =========================================================
+         CURSOR
+    ========================================================== -->
+
+    <div class="cursor-glow"></div>
 
 
-<!-- =========================================================
-     CURSOR
-========================================================== -->
+    <!-- =========================================================
+         NAVBAR
+    ========================================================== -->
 
-<div class="cursor-glow"></div>
+    <header id="header">
 
-
-<!-- =========================================================
-     NAVBAR
-========================================================== -->
-
-<header id="header">
-
-    <nav class="navbar">
-
-        <a href="#home"
-           class="logo">
-
-            SP.
-
-        </a>
-
-
-        <div class="nav-links">
+        <nav class="navbar">
 
             <a href="#home"
-               class="active">
-                Home
+               class="logo">
+
+                SP.
+
             </a>
 
-            <a href="#about">
-                About
-            </a>
 
-            <a href="#skills">
-                Skills
-            </a>
+            <div class="nav-links">
 
-            <a href="#experience">
-                Experience
-            </a>
-
-            <a href="#certifications">
-                Certifications
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </div>
-
-
-        <div class="menu-btn"
-             id="menuBtn">
-
-            <i class='bx bx-menu'></i>
-
-        </div>
-
-    </nav>
-
-</header>
-
-
-<!-- =========================================================
-     MOBILE MENU
-========================================================== -->
-
-<div class="mobile-menu"
-     id="mobileMenu">
-
-    <div class="close-menu"
-         id="closeMenu">
-
-        <i class='bx bx-x'></i>
-
-    </div>
-
-
-    <ul>
-
-        <li>
-            <a href="#home">
-                Home
-            </a>
-        </li>
-
-        <li>
-            <a href="#about">
-                About
-            </a>
-        </li>
-
-        <li>
-            <a href="#skills">
-                Skills
-            </a>
-        </li>
-
-        <li>
-            <a href="#experience">
-                Experience
-            </a>
-        </li>
-
-        <li>
-            <a href="#certifications">
-                Certifications
-            </a>
-        </li>
-
-        <li>
-            <a href="#contact">
-                Contact
-            </a>
-        </li>
-
-    </ul>
-
-</div>
-
-
-<!-- =========================================================
-     HERO
-========================================================== -->
-
-<section id="home">
-
-    <div class="hero-grid"></div>
-
-    <div class="hero-orb"></div>
-
-
-    <div class="container">
-
-        <div class="hero-content">
-
-
-            <div class="eyebrow">
-
-                Talent Acquisition Professional
-
-            </div>
-
-
-            <h1 class="hero-title">
-
-                <span class="name-line">
-                    Sarvesh
-                </span>
-
-                <span class="name-line accent-name">
-                    Patkar
-                </span>
-
-            </h1>
-
-
-            <p class="hero-description">
-
-                IT & BFSI Talent Acquisition Professional with
-                experience in full-cycle recruitment, technical
-                hiring, stakeholder management and candidate
-                engagement. Focused on connecting exceptional
-                talent with the right opportunities.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a href="#experience"
-                   class="btn btn-primary">
-
-                    Explore Experience
-
-                    <i class='bx bx-right-arrow-alt'></i>
-
+                <a href="#home" class="active">
+                    Home
                 </a>
 
-
-                <a href="Sarvesh%20-%20Recruitment%20Associate.pdf"
-                   download
-                   class="btn btn-outline">
-
-                    Download CV
-
-                    <i class='bx bx-download'></i>
-
+                <a href="#about">
+                    About
                 </a>
 
-            </div>
-
-
-            <div class="hero-social">
-
-                <a href="https://www.linkedin.com/in/sarvesh-patkar2810"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="LinkedIn">
-
-                    <i class='bx bxl-linkedin'></i>
-
+                <a href="#skills">
+                    Skills
                 </a>
 
-
-                <a href="mailto:sarveshpatkar2810@gmail.com"
-                   aria-label="Email">
-
-                    <i class='bx bx-envelope'></i>
-
+                <a href="#experience">
+                    Experience
                 </a>
 
-
-                <a href="tel:+918830806054"
-                   aria-label="Phone">
-
-                    <i class='bx bx-phone'></i>
-
+                <a href="#certifications">
+                    Certifications
                 </a>
 
-                <a href="https://wa.me/918830806054?text=Hello%20Sarvesh%2C%20I%20came%20across%20your%20profile%20and%20would%20like%20to%20connect%20with%20you%20regarding%20a%20career%20opportunity."
-   target="_blank"
-   rel="noopener noreferrer"
-   aria-label="WhatsApp">
-    <i class='bx bxl-whatsapp'></i>
-</a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     ABOUT
-========================================================== -->
-
-<section id="about">
-
-    <div class="container">
-
-        <div class="about-grid">
-
-
-            <div class="about-image reveal">
-
-                <img src="Images/sarvesh.png"
-                     alt="Sarvesh Patkar"
-                     loading="lazy">
-
-            </div>
-
-
-            <div class="reveal">
-
-                <div class="section-label">
-                    About Me
-                </div>
-
-
-                <h2 class="section-title">
-
-                    Talent. People.<br>
-                    Business Partnership.
-
-                </h2>
-
-
-                <p class="about-text">
-
-                    I am a Talent Acquisition Professional with experience
-                    across IT and BFSI recruitment, managing the complete
-                    recruitment lifecycle from understanding hiring
-                    requirements and sourcing candidates to screening,
-                    interview coordination, stakeholder communication,
-                    offer rollout and onboarding coordination.
-
-                    My experience in Talent Acquisition has helped me
-                    develop strong capabilities in stakeholder management,
-                    business requirement understanding, candidate
-                    engagement and people coordination, while working
-                    closely with hiring managers and clients to understand
-                    organizational needs and deliver the right talent.
-
-                    <br><br>
-
-                    With a background in Computer Engineering, I bring a
-                    combination of technical understanding, recruitment
-                    expertise and a business-oriented approach to people
-                    management. I am now looking to leverage my Talent
-                    Acquisition experience as a foundation for transitioning
-                    into an HRBP role, contributing to stakeholder partnership,
-                    employee engagement and people-focused business initiatives.
-
-                </p>
-
-
-                <div class="about-highlights">
-
-
-                    <div class="highlight">
-
-                        <i class='bx bx-code-alt'></i>
-
-                        <h4>
-                            IT Recruitment
-                        </h4>
-
-                        <p>
-                            Technical & engineering hiring
-                        </p>
-
-                    </div>
-
-
-                    <div class="highlight">
-
-                        <i class='bx bx-building-house'></i>
-
-                        <h4>
-                            BFSI Hiring
-                        </h4>
-
-                        <p>
-                            Banking & financial services
-                        </p>
-
-                    </div>
-
-
-                    <div class="highlight">
-
-                        <i class='bx bx-user-check'></i>
-
-                        <h4>
-                            Full Cycle TA
-                        </h4>
-
-                        <p>
-                            Sourcing to onboarding
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     SKILLS SLIDER
-========================================================== -->
-
-<section id="skills">
-
-    <div class="container">
-
-
-        <div class="skills-heading reveal">
-
-            <div>
-
-                <div class="section-label">
-                    Recruitment Expertise
-                </div>
-
-                <h2 class="section-title">
-                    Skills that drive recruitment.
-                </h2>
-
-            </div>
-
-
-            <p class="section-description">
-
-                A combination of sourcing expertise,
-                technical understanding, stakeholder
-                management and recruitment operations.
-
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="slider-window">
-
-        <div class="skills-track">
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    01
-                </span>
-
-                <i class='bx bx-search-alt'></i>
-
-                <h3>
-                    Candidate Sourcing
-                </h3>
-
-                <p>
-                    Naukri, LinkedIn, job portals,
-                    databases, referrals and targeted
-                    sourcing.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    02
-                </span>
-
-                <i class='bx bx-filter-alt'></i>
-
-                <h3>
-                    Resume Screening
-                </h3>
-
-                <p>
-                    Profile evaluation based on skills,
-                    experience, domain and role fit.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    03
-                </span>
-
-                <i class='bx bx-laptop'></i>
-
-                <h3>
-                    IT Recruitment
-                </h3>
-
-                <p>
-                    Technical hiring across development,
-                    cloud, DevOps, support and data roles.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    04
-                </span>
-
-                <i class='bx bx-bank'></i>
-
-                <h3>
-                    BFSI Recruitment
-                </h3>
-
-                <p>
-                    Hiring across banking, financial
-                    services, credit, sales, risk and
-                    operations.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    05
-                </span>
-
-                <i class='bx bx-conversation'></i>
-
-                <h3>
-                    Stakeholder Management
-                </h3>
-
-                <p>
-                    Requirement understanding and
-                    continuous communication with
-                    hiring stakeholders.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    06
-                </span>
-
-                <i class='bx bx-calendar-check'></i>
-
-                <h3>
-                    Interview Coordination
-                </h3>
-
-                <p>
-                    Managing candidate and interviewer
-                    schedules throughout the hiring process.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    07
-                </span>
-
-                <i class='bx bx-line-chart'></i>
-
-                <h3>
-                    Pipeline Management
-                </h3>
-
-                <p>
-                    Candidate pipelines, trackers,
-                    follow-ups and recruitment reporting.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    08
-                </span>
-
-                <i class='bx bx-user-voice'></i>
-
-                <h3>
-                    Candidate Engagement
-                </h3>
-
-                <p>
-                    Building relationships and delivering
-                    a smooth candidate experience.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    01
-                </span>
-
-                <i class='bx bx-search-alt'></i>
-
-                <h3>
-                    Candidate Sourcing
-                </h3>
-
-                <p>
-                    Naukri, LinkedIn, job portals,
-                    databases, referrals and targeted
-                    sourcing.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    02
-                </span>
-
-                <i class='bx bx-filter-alt'></i>
-
-                <h3>
-                    Resume Screening
-                </h3>
-
-                <p>
-                    Profile evaluation based on skills,
-                    experience, domain and role fit.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    03
-                </span>
-
-                <i class='bx bx-laptop'></i>
-
-                <h3>
-                    IT Recruitment
-                </h3>
-
-                <p>
-                    Technical hiring across development,
-                    cloud, DevOps, support and data roles.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    04
-                </span>
-
-                <i class='bx bx-bank'></i>
-
-                <h3>
-                    BFSI Recruitment
-                </h3>
-
-                <p>
-                    Hiring across banking, financial
-                    services, credit, sales, risk and
-                    operations.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    05
-                </span>
-
-                <i class='bx bx-conversation'></i>
-
-                <h3>
-                    Stakeholder Management
-                </h3>
-
-                <p>
-                    Requirement understanding and
-                    continuous communication with
-                    hiring stakeholders.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    06
-                </span>
-
-                <i class='bx bx-calendar-check'></i>
-
-                <h3>
-                    Interview Coordination
-                </h3>
-
-                <p>
-                    Managing candidate and interviewer
-                    schedules throughout the hiring process.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    07
-                </span>
-
-                <i class='bx bx-line-chart'></i>
-
-                <h3>
-                    Pipeline Management
-                </h3>
-
-                <p>
-                    Candidate pipelines, trackers,
-                    follow-ups and recruitment reporting.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    08
-                </span>
-
-                <i class='bx bx-user-voice'></i>
-
-                <h3>
-                    Candidate Engagement
-                </h3>
-
-                <p>
-                    Building relationships and delivering
-                    a smooth candidate experience.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     EXPERIENCE
-========================================================== -->
-
-<section id="experience">
-
-    <div class="container">
-
-
-        <div class="experience-intro reveal">
-
-            <div class="section-label">
-                Professional Experience
-            </div>
-
-
-            <h2 class="section-title">
-
-                Building talent pipelines<br>
-
-                that create impact.
-
-            </h2>
-
-
-            <p class="section-description">
-
-                Experience across IT, BFSI and technical
-                recruitment, working with candidates,
-                clients, hiring managers and stakeholders
-                throughout the recruitment lifecycle.
-
-            </p>
-
-        </div>
-
-
-        <div class="experience-timeline">
-
-
-            <!-- =================================================
-                 JOVE HR SERVICES
-            ================================================== -->
-
-            <div class="experience-item reveal">
-
-                <div class="experience-dot"></div>
-
-
-                <div class="company-logo">
-
-                    <span>
-
-                        <img src="Images/Jove.png"
-                             alt="Jove HR Services">
-
-                    </span>
-
-                </div>
-
-
-                <div class="experience-header">
-
-                    <div>
-
-                        <h3 class="experience-role">
-                            Recruitment Associate
-                        </h3>
-
-                        <p class="experience-company">
-                            Jove HR Services Pvt. Ltd.
-                        </p>
-
-                    </div>
-
-
-                    <span class="experience-date">
-                        Jan 2026 – Present
-                    </span>
-
-                </div>
-
-
-                <div class="experience-content">
-
-
-                    <ul>
-
-                        <li>
-                            Manage end-to-end recruitment for
-                            BFSI and IT industry positions,
-                            ensuring timely delivery against
-                            client hiring requirements.
-                        </li>
-
-
-                        <li>
-                            Source and attract candidates through
-                            Naukri, LinkedIn, job portals, employee
-                            referrals and internal databases.
-                        </li>
-
-
-                        <li>
-                            Screen and evaluate candidate profiles
-                            through telephonic interviews to assess
-                            technical competencies, domain expertise,
-                            communication skills and overall role fit.
-                        </li>
-
-
-                        <li>
-                            Coordinate interviews between candidates,
-                            hiring managers and clients while ensuring
-                            a seamless recruitment process.
-                        </li>
-
-
-                        <li>
-                            Build and maintain strong relationships
-                            with stakeholders and candidates throughout
-                            the hiring lifecycle, from sourcing to offer
-                            rollout and onboarding coordination.
-                        </li>
-
-
-                        <li>
-                            Maintain candidate pipelines, recruitment
-                            trackers and databases to ensure efficient
-                            follow-ups and accurate hiring records.
-                        </li>
-
-
-                        <li>
-                            Collaborate with hiring managers to understand
-                            role requirements, define sourcing strategies
-                            and deliver quality talent within agreed
-                            timelines.
-                        </li>
-
-                    </ul>
-
-
-                    <!-- ROLE SLIDER -->
-
-                    <div class="roles-section">
-
-                        <div class="roles-heading">
-
-                            <span class="roles-title">
-                                Roles Recruited For
-                            </span>
-
-                            <span class="roles-hint">
-
-                                <i class='bx bx-move-horizontal'></i>
-
-                                Hover to pause
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="roles-slider">
-
-                            <div class="roles-track">
-
-
-                                <!-- SET ONE -->
-
-                                <span class="role-tag">
-                                    Accounts Payable
-                                </span>
-
-                                <span class="role-tag">
-                                    Accounts Receivable
-                                </span>
-
-                                <span class="role-tag">
-                                    Regional Sales Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    HR Partner
-                                </span>
-
-                                <span class="role-tag">
-                                    Regional Head
-                                </span>
-
-                                <span class="role-tag">
-                                    Credit Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Credit Manager – Step Loan
-                                </span>
-
-                                <span class="role-tag">
-                                    BDM – Step Loan
-                                </span>
-
-                                <span class="role-tag">
-                                    BDM
-                                </span>
-
-                                <span class="role-tag">
-                                    Sales Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Area Sales Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Cluster Sales Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Zonal Head
-                                </span>
-
-                                <span class="role-tag">
-                                    Grievance Manager / Nodal Officer
-                                </span>
-
-                                <span class="role-tag">
-                                    DevOps Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Business Operations Coordinator
-                                </span>
-
-                                <span class="role-tag">
-                                    Risk Analyst
-                                </span>
-
-                                <span class="role-tag">
-                                    Head of Operations
-                                </span>
-
-                                <span class="role-tag">
-                                    Collection Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Business Analyst
-                                </span>
-
-                                <span class="role-tag">
-                                    IT Auditor
-                                </span>
-
-                                <span class="role-tag">
-                                    Personal Assistant
-                                </span>
-
-                                <span class="role-tag">
-                                    Treasury Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Executive Assistant
-                                </span>
-
-                                <span class="role-tag">
-                                    Company Secretary
-                                </span>
-
-                                <span class="role-tag">
-                                    CTO
-                                </span>
-
-                                <span class="role-tag">
-                                    Head of Engineering
-                                </span>
-
-                                <span class="role-tag">
-                                    HRBP
-                                </span>
-
-                                <span class="role-tag">
-                                    CA Fresher
-                                </span>
-
-                                <span class="role-tag">
-                                    Branch Sales Manager – Commercial Vehicles
-                                </span>
-
-                                <span class="role-tag">
-                                    BSM – HL
-                                </span>
-
-                                <span class="role-tag">
-                                    Desktop Support Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Insurance Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Application Support
-                                </span>
-
-                                <span class="role-tag">
-                                    DVP – IT
-                                </span>
-
-                                <span class="role-tag">
-                                    Lead Management Support
-                                </span>
-
-                                <span class="role-tag">
-                                    AVP – IT
-                                </span>
-
-                                <span class="role-tag">
-                                    Application Configurator
-                                </span>
-
-                                <span class="role-tag">
-                                    CEO Office
-                                </span>
-
-                                <span class="role-tag">
-                                    HR Admin
-                                </span>
-
-                                <span class="role-tag">
-                                    Branch Credit Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Area Credit Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Full Stack Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Product Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    VP – Investment Banking
-                                </span>
-
-                                <span class="role-tag">
-                                    Legal Manager
-                                </span>
-
-
-                                <!-- DUPLICATE FOR INFINITE LOOP -->
-
-                                <span class="role-tag">
-                                    Accounts Payable
-                                </span>
-
-                                <span class="role-tag">
-                                    Accounts Receivable
-                                </span>
-
-                                <span class="role-tag">
-                                    Regional Sales Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    HR Partner
-                                </span>
-
-                                <span class="role-tag">
-                                    Regional Head
-                                </span>
-
-                                <span class="role-tag">
-                                    Credit Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Credit Manager – Step Loan
-                                </span>
-
-                                <span class="role-tag">
-                                    BDM – Step Loan
-                                </span>
-
-                                <span class="role-tag">
-                                    BDM
-                                </span>
-
-                                <span class="role-tag">
-                                    Sales Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Area Sales Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Cluster Sales Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Zonal Head
-                                </span>
-
-                                <span class="role-tag">
-                                    Grievance Manager / Nodal Officer
-                                </span>
-
-                                <span class="role-tag">
-                                    DevOps Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Business Operations Coordinator
-                                </span>
-
-                                <span class="role-tag">
-                                    Risk Analyst
-                                </span>
-
-                                <span class="role-tag">
-                                    Head of Operations
-                                </span>
-
-                                <span class="role-tag">
-                                    Collection Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Business Analyst
-                                </span>
-
-                                <span class="role-tag">
-                                    IT Auditor
-                                </span>
-
-                                <span class="role-tag">
-                                    Personal Assistant
-                                </span>
-
-                                <span class="role-tag">
-                                    Treasury Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Executive Assistant
-                                </span>
-
-                                <span class="role-tag">
-                                    Company Secretary
-                                </span>
-
-                                <span class="role-tag">
-                                    CTO
-                                </span>
-
-                                <span class="role-tag">
-                                    Head of Engineering
-                                </span>
-
-                                <span class="role-tag">
-                                    HRBP
-                                </span>
-
-                                <span class="role-tag">
-                                    CA Fresher
-                                </span>
-
-                                <span class="role-tag">
-                                    Branch Sales Manager – Commercial Vehicles
-                                </span>
-
-                                <span class="role-tag">
-                                    BSM – HL
-                                </span>
-
-                                <span class="role-tag">
-                                    Desktop Support Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Insurance Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Application Support
-                                </span>
-
-                                <span class="role-tag">
-                                    DVP – IT
-                                </span>
-
-                                <span class="role-tag">
-                                    Lead Management Support
-                                </span>
-
-                                <span class="role-tag">
-                                    AVP – IT
-                                </span>
-
-                                <span class="role-tag">
-                                    Application Configurator
-                                </span>
-
-                                <span class="role-tag">
-                                    CEO Office
-                                </span>
-
-                                <span class="role-tag">
-                                    HR Admin
-                                </span>
-
-                                <span class="role-tag">
-                                    Branch Credit Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Area Credit Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Full Stack Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Product Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    VP – Investment Banking
-                                </span>
-
-                                <span class="role-tag">
-                                    Legal Manager
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 EMONICS
-            ================================================== -->
-
-            <div class="experience-item reveal">
-
-                <div class="experience-dot"></div>
-
-
-                <div class="company-logo">
-
-                    <span>
-
-                        <img src="Images/Emonics LLC.webp"
-                             alt="Emonics LLC">
-
-                    </span>
-
-                </div>
-
-
-                <div class="experience-header">
-
-                    <div>
-
-                        <h3 class="experience-role">
-                            IT Recruiter
-                        </h3>
-
-                        <p class="experience-company">
-                            Emonics LLC
-                        </p>
-
-                    </div>
-
-
-                    <span class="experience-date">
-                        Jan 2025 – Sep 2025
-                    </span>
-
-                </div>
-
-
-                <div class="experience-content">
-
-
-                    <ul>
-
-                        <li>
-                            Managed full-cycle recruitment for
-                            US-based clients across a wide range
-                            of technical positions.
-                        </li>
-
-
-                        <li>
-                            Sourced qualified candidates through
-                            Dice, Monster, CareerBuilder, Indeed,
-                            LinkedIn and internal databases using
-                            various sourcing techniques.
-                        </li>
-
-
-                        <li>
-                            Screened and evaluated technical resumes
-                            based on required skills, experience and
-                            project fit across Java, Python, DevOps,
-                            Cloud and Full Stack Development.
-                        </li>
-
-
-                        <li>
-                            Conducted initial screening calls to assess
-                            technical expertise, communication skills,
-                            work authorization, visa status, availability
-                            and compensation expectations.
-                        </li>
-
-
-                        <li>
-                            Coordinated interviews with hiring managers
-                            and clients, ensuring timely feedback and
-                            effective candidate communication.
-                        </li>
-
-
-                        <li>
-                            Negotiated pay rates and employment terms,
-                            including W2, C2C and 1099 engagements,
-                            while ensuring compliance with client
-                            requirements.
-                        </li>
-
-
-                        <li>
-                            Managed onboarding activities including
-                            documentation, joining formalities and
-                            post-placement consultant support.
-                        </li>
-
-
-                        <li>
-                            Built and maintained strong relationships
-                            with consultants, clients and hiring managers
-                            to develop a robust talent pipeline.
-                        </li>
-
-
-                        <li>
-                            Collaborated with implementation partners
-                            and vendors to source niche technical talent,
-                            maintain vendor relationships and support
-                            timely fulfillment of client requirements.
-                        </li>
-
-                    </ul>
-
-
-                    <div class="roles-section">
-
-                        <div class="roles-heading">
-
-                            <span class="roles-title">
-                                Roles Recruited For
-                            </span>
-
-                            <span class="roles-hint">
-
-                                <i class='bx bx-move-horizontal'></i>
-
-                                Hover to pause
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="roles-slider">
-
-                            <div class="roles-track">
-
-
-                                <span class="role-tag">
-                                    Software Developer
-                                </span>
-
-                                <span class="role-tag">
-                                    Full Stack Developer
-                                </span>
-
-                                <span class="role-tag">
-                                    Data Analyst
-                                </span>
-
-                                <span class="role-tag">
-                                    Machine Learning Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    DevOps Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Cloud Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    QA Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Mechanical Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    IT Engineering
-                                </span>
-
-
-                                <!-- DUPLICATE -->
-
-                                <span class="role-tag">
-                                    Software Developer
-                                </span>
-
-                                <span class="role-tag">
-                                    Full Stack Developer
-                                </span>
-
-                                <span class="role-tag">
-                                    Data Analyst
-                                </span>
-
-                                <span class="role-tag">
-                                    Machine Learning Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    DevOps Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Cloud Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    QA Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Mechanical Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    IT Engineering
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 LUCIA
-            ================================================== -->
-
-            <div class="experience-item reveal">
-
-                <div class="experience-dot"></div>
-
-
-                <div class="company-logo">
-
-                    <span>
-
-                        <img src="Images/Lucia Enterprises.webp"
-                             alt="Lucia Enterprises">
-
-                    </span>
-
-                </div>
-
-
-                <div class="experience-header">
-
-                    <div>
-
-                        <h3 class="experience-role">
-                            HR Executive Trainee
-                        </h3>
-
-                        <p class="experience-company">
-                            Lucia Enterprises
-                        </p>
-
-                    </div>
-
-
-                    <span class="experience-date">
-                        Oct 2024 – Dec 2024
-                    </span>
-
-                </div>
-
-
-                <div class="experience-content">
-
-
-                    <ul>
-
-                        <li>
-                            Handled end-to-end recruitment for
-                            multiple client requirements.
-                        </li>
-
-
-                        <li>
-                            Screened and evaluated candidates to
-                            identify the best fit for each role.
-                        </li>
-
-
-                        <li>
-                            Coordinated and scheduled interviews
-                            efficiently between clients and candidates.
-                        </li>
-
-
-                        <li>
-                            Communicated with candidates regarding
-                            interest, availability and role suitability.
-                        </li>
-
-
-                        <li>
-                            Maintained strong candidate relationships
-                            to ensure a smooth hiring experience.
-                        </li>
-
-
-                        <li>
-                            Managed recruitment trackers and ensured
-                            timely closures of positions.
-                        </li>
-
-                    </ul>
-
-
-                    <div class="roles-section">
-
-                        <div class="roles-heading">
-
-                            <span class="roles-title">
-                                Roles Recruited For
-                            </span>
-
-                            <span class="roles-hint">
-
-                                <i class='bx bx-move-horizontal'></i>
-
-                                Hover to pause
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="roles-slider">
-
-                            <div class="roles-track">
-
-
-                                <span class="role-tag">
-                                    ASM
-                                </span>
-
-                                <span class="role-tag">
-                                    Presales Executive
-                                </span>
-
-                                <span class="role-tag">
-                                    Project Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Civil Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Site Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    2D / 3D Designer
-                                </span>
-
-
-                                <!-- DUPLICATE -->
-
-                                <span class="role-tag">
-                                    ASM
-                                </span>
-
-                                <span class="role-tag">
-                                    Presales Executive
-                                </span>
-
-                                <span class="role-tag">
-                                    Project Manager
-                                </span>
-
-                                <span class="role-tag">
-                                    Civil Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    Site Engineer
-                                </span>
-
-                                <span class="role-tag">
-                                    2D / 3D Designer
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     STATS
-========================================================== -->
-
-<section>
-
-    <div class="container">
-
-        <div class="stats reveal">
-
-
-            <div class="stat">
-
-                <div class="stat-number"
-                     data-target="3">
-
-                    0
-
-                </div>
-
-                <p>
-                    Recruitment Organizations
-                </p>
-
-            </div>
-
-
-            <div class="stat">
-
-                <div class="stat-number"
-                     data-target="2">
-
-                    0
-
-                </div>
-
-                <p>
-                    Core Hiring Domains
-                </p>
-
-            </div>
-
-
-            <div class="stat">
-
-                <div class="stat-number"
-                     data-target="50">
-
-                    0
-
-                </div>
-
-                <p>
-                    Role Categories Handled+
-                </p>
-
-            </div>
-
-
-            <div class="stat">
-
-                <div class="stat-number"
-                     data-target="100">
-
-                    0
-
-                </div>
-
-                <p>
-                    Recruitment Lifecycle %
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     CONTACT
-========================================================== -->
-
-<section id="contact">
-
-    <div class="container">
-
-
-        <div class="contact-grid">
-
-
-            <div class="reveal">
-
-
-                <div class="section-label">
+                <a href="#contact">
                     Contact
+                </a>
+
+            </div>
+
+
+            <div class="menu-btn"
+                 id="menuBtn">
+
+                <i class='bx bx-menu'></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================================
+         MOBILE MENU
+    ========================================================== -->
+
+    <div class="mobile-menu"
+         id="mobileMenu">
+
+        <div class="close-menu"
+             id="closeMenu">
+
+            <i class='bx bx-x'></i>
+
+        </div>
+
+
+        <ul>
+
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills">
+                    Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="#experience">
+                    Experience
+                </a>
+            </li>
+
+            <li>
+                <a href="#certifications">
+                    Certifications
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <section id="home">
+
+        <div class="hero-grid"></div>
+
+        <div class="hero-orb"></div>
+
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    Talent Acquisition Professional
                 </div>
 
 
-                <h2 class="section-title">
-                    Let's connect.
-                </h2>
+                <h1 class="hero-title">
+
+                    <span class="name-line">
+                        Sarvesh
+                    </span>
+
+                    <span class="name-line accent-name">
+                        Patkar
+                    </span>
+
+                </h1>
 
 
-                <p class="section-description">
+                <p class="hero-description">
 
-                    Whether you're looking for recruitment
-                    support, discussing an opportunity or
-                    simply want to connect, feel free to
-                    reach out.
+                    IT & BFSI Talent Acquisition Professional with
+                    experience in full-cycle recruitment, technical
+                    hiring, stakeholder management and candidate
+                    engagement. Focused on connecting exceptional
+                    talent with the right opportunities.
 
                 </p>
 
 
-                <div class="contact-info">
+                <div class="hero-buttons">
 
+                    <a href="#experience"
+                       class="btn btn-primary">
 
-                    <a class="contact-item"
-                       href="mailto:sarveshpatkar2810@gmail.com">
+                        Explore Experience
 
-                        <i class='bx bx-envelope'></i>
-
-
-                        <div>
-
-                            <span>
-                                Email
-                            </span>
-
-                            <p>
-                                sarveshpatkar2810@gmail.com
-                            </p>
-
-                        </div>
+                        <i class='bx bx-right-arrow-alt'></i>
 
                     </a>
 
 
-                    <a class="contact-item"
-                       href="tel:+918830806054">
+                    <a href="Sarvesh%20-%20Recruitment%20Associate.pdf"
+                       download
+                       class="btn btn-outline">
 
-                        <i class='bx bx-phone'></i>
+                        Download CV
 
-
-                        <div>
-
-                            <span>
-                                Phone
-                            </span>
-
-                            <p>
-                                +91 88308 06054
-                            </p>
-
-                        </div>
+                        <i class='bx bx-download'></i>
 
                     </a>
-
-
-                    <div class="contact-item">
-
-                        <i class='bx bx-map'></i>
-
-
-                        <div>
-
-                            <span>
-                                Location
-                            </span>
-
-                            <p>
-                                Thane, Mumbai, India
-                            </p>
-
-                        </div>
-
-                    </div>
-
 
                 </div>
 
 
-                <div class="social-icons">
-
+                <div class="hero-social">
 
                     <a href="https://www.linkedin.com/in/sarvesh-patkar2810"
                        target="_blank"
@@ -4577,387 +2733,1777 @@
                     </a>
 
 
+                    <a href="https://wa.me/918830806054?text=Hello%20Sarvesh%2C%20I%20came%20across%20your%20profile%20and%20would%20like%20to%20connect%20with%20you%20regarding%20a%20career%20opportunity"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="WhatsApp">
+
+                        <i class='bx bxl-whatsapp'></i>
+
+                    </a>
+
                 </div>
 
-
-                <br>
-
-
-                <a href="Sarvesh%20-%20Recruitment%20Associate.pdf"
-                   download
-                   class="btn btn-primary">
-
-                    Download CV
-
-                    <i class='bx bx-download'></i>
-
-                </a>
-
-
             </div>
-
-
-            <!-- CONTACT FORM -->
-
-            <div class="contact-form reveal">
-
-
-                <form name="submit-to-google-sheet">
-
-
-                    <div class="form-group">
-
-                        <input type="text"
-                               name="Name"
-                               placeholder="Your Name"
-                               required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <input type="email"
-                               name="Email"
-                               placeholder="Your Email"
-                               required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <input type="text"
-                               name="Subject"
-                               placeholder="Subject">
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <textarea name="Message"
-                                  placeholder="Your Message"
-                                  required></textarea>
-
-                    </div>
-
-
-                    <button type="submit"
-                            class="btn btn-primary">
-
-                        Send Message
-
-                        <i class="bx bx-send"></i>
-
-                    </button>
-
-
-                    <span id="msg"></span>
-
-
-                </form>
-
-            </div>
-
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================================================
-     FOOTER
-========================================================== -->
+    <!-- =========================================================
+         ABOUT
+    ========================================================== -->
 
-<section style="padding:0 0 25px;">
+    <section id="about">
 
-    <div class="container">
+        <div class="container">
 
-
-        <footer>
-
-
-            <p>
-
-                © <span id="year"></span>
-
-                Sarvesh Patkar.
-
-                All rights reserved.
-
-            </p>
+            <div class="about-grid">
 
 
-            <div class="footer-links">
+                <div class="about-image reveal">
 
-                <a href="#home">
-                    Home
-                </a>
+                    <img src="Images/sarvesh.png"
+                         alt="Sarvesh Patkar"
+                         loading="lazy">
 
-                <a href="#about">
-                    About
-                </a>
+                </div>
 
-                <a href="#skills">
-                    Skills
-                </a>
 
-                <a href="#experience">
-                    Experience
-                </a>
+                <div class="reveal">
 
-                <a href="#contact">
-                    Contact
-                </a>
+                    <div class="section-label">
+                        About Me
+                    </div>
+
+
+                    <h2 class="section-title">
+
+                        Talent. People.<br>
+                        Business Partnership.
+
+                    </h2>
+
+
+                    <p class="about-text">
+
+                        I am a Talent Acquisition Professional with experience
+                        across IT and BFSI recruitment, managing the complete
+                        recruitment lifecycle from understanding hiring
+                        requirements and sourcing candidates to screening,
+                        interview coordination, stakeholder communication,
+                        offer rollout and onboarding coordination.
+
+                        My experience in Talent Acquisition has helped me
+                        develop strong capabilities in stakeholder management,
+                        business requirement understanding, candidate
+                        engagement and people coordination, while working
+                        closely with hiring managers and clients to understand
+                        organizational needs and deliver the right talent.
+
+                        <br><br>
+
+                        With a background in Computer Engineering, I bring a
+                        combination of technical understanding, recruitment
+                        expertise and a business-oriented approach to people
+                        management. I am now looking to leverage my Talent
+                        Acquisition experience as a foundation for transitioning
+                        into an HRBP role, contributing to stakeholder partnership,
+                        employee engagement and people-focused business initiatives.
+
+                    </p>
+
+
+                    <div class="about-highlights">
+
+
+                        <div class="highlight">
+
+                            <i class='bx bx-code-alt'></i>
+
+                            <h4>
+                                IT Recruitment
+                            </h4>
+
+                            <p>
+                                Technical & engineering hiring
+                            </p>
+
+                        </div>
+
+
+                        <div class="highlight">
+
+                            <i class='bx bx-building-house'></i>
+
+                            <h4>
+                                BFSI Hiring
+                            </h4>
+
+                            <p>
+                                Banking & financial services
+                            </p>
+
+                        </div>
+
+
+                        <div class="highlight">
+
+                            <i class='bx bx-user-check'></i>
+
+                            <h4>
+                                Full Cycle TA
+                            </h4>
+
+                            <p>
+                                Sourcing to onboarding
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SKILLS
+    ========================================================== -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="skills-heading reveal">
+
+                <div>
+
+                    <div class="section-label">
+                        Recruitment Expertise
+                    </div>
+
+                    <h2 class="section-title">
+                        Skills that drive recruitment.
+                    </h2>
+
+                </div>
+
+
+                <p class="section-description">
+
+                    A combination of sourcing expertise,
+                    technical understanding, stakeholder
+                    management and recruitment operations.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="slider-window">
+
+            <div class="skills-track">
+
+
+                <!-- SET ONE -->
+
+                <div class="skill-card">
+
+                    <span class="skill-number">01</span>
+
+                    <i class='bx bx-search-alt'></i>
+
+                    <h3>
+                        Candidate Sourcing
+                    </h3>
+
+                    <p>
+                        Naukri, LinkedIn, job portals,
+                        databases, referrals and targeted
+                        sourcing.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">02</span>
+
+                    <i class='bx bx-filter-alt'></i>
+
+                    <h3>
+                        Resume Screening
+                    </h3>
+
+                    <p>
+                        Profile evaluation based on skills,
+                        experience, domain and role fit.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">03</span>
+
+                    <i class='bx bx-laptop'></i>
+
+                    <h3>
+                        IT Recruitment
+                    </h3>
+
+                    <p>
+                        Technical hiring across development,
+                        cloud, DevOps, support and data roles.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">04</span>
+
+                    <i class='bx bx-bank'></i>
+
+                    <h3>
+                        BFSI Recruitment
+                    </h3>
+
+                    <p>
+                        Hiring across banking, financial
+                        services, credit, sales, risk and
+                        operations.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">05</span>
+
+                    <i class='bx bx-conversation'></i>
+
+                    <h3>
+                        Stakeholder Management
+                    </h3>
+
+                    <p>
+                        Requirement understanding and
+                        continuous communication with
+                        hiring stakeholders.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">06</span>
+
+                    <i class='bx bx-calendar-check'></i>
+
+                    <h3>
+                        Interview Coordination
+                    </h3>
+
+                    <p>
+                        Managing candidate and interviewer
+                        schedules throughout the hiring process.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">07</span>
+
+                    <i class='bx bx-line-chart'></i>
+
+                    <h3>
+                        Pipeline Management
+                    </h3>
+
+                    <p>
+                        Candidate pipelines, trackers,
+                        follow-ups and recruitment reporting.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">08</span>
+
+                    <i class='bx bx-user-voice'></i>
+
+                    <h3>
+                        Candidate Engagement
+                    </h3>
+
+                    <p>
+                        Building relationships and delivering
+                        a smooth candidate experience.
+                    </p>
+
+                </div>
+
+
+                <!-- DUPLICATE SET FOR CONTINUOUS SLIDER -->
+
+                <div class="skill-card">
+
+                    <span class="skill-number">01</span>
+
+                    <i class='bx bx-search-alt'></i>
+
+                    <h3>
+                        Candidate Sourcing
+                    </h3>
+
+                    <p>
+                        Naukri, LinkedIn, job portals,
+                        databases, referrals and targeted
+                        sourcing.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">02</span>
+
+                    <i class='bx bx-filter-alt'></i>
+
+                    <h3>
+                        Resume Screening
+                    </h3>
+
+                    <p>
+                        Profile evaluation based on skills,
+                        experience, domain and role fit.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">03</span>
+
+                    <i class='bx bx-laptop'></i>
+
+                    <h3>
+                        IT Recruitment
+                    </h3>
+
+                    <p>
+                        Technical hiring across development,
+                        cloud, DevOps, support and data roles.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">04</span>
+
+                    <i class='bx bx-bank'></i>
+
+                    <h3>
+                        BFSI Recruitment
+                    </h3>
+
+                    <p>
+                        Hiring across banking, financial
+                        services, credit, sales, risk and
+                        operations.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">05</span>
+
+                    <i class='bx bx-conversation'></i>
+
+                    <h3>
+                        Stakeholder Management
+                    </h3>
+
+                    <p>
+                        Requirement understanding and
+                        continuous communication with
+                        hiring stakeholders.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">06</span>
+
+                    <i class='bx bx-calendar-check'></i>
+
+                    <h3>
+                        Interview Coordination
+                    </h3>
+
+                    <p>
+                        Managing candidate and interviewer
+                        schedules throughout the hiring process.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">07</span>
+
+                    <i class='bx bx-line-chart'></i>
+
+                    <h3>
+                        Pipeline Management
+                    </h3>
+
+                    <p>
+                        Candidate pipelines, trackers,
+                        follow-ups and recruitment reporting.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <span class="skill-number">08</span>
+
+                    <i class='bx bx-user-voice'></i>
+
+                    <h3>
+                        Candidate Engagement
+                    </h3>
+
+                    <p>
+                        Building relationships and delivering
+                        a smooth candidate experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         EXPERIENCE
+    ========================================================== -->
+
+    <section id="experience">
+
+        <div class="container">
+
+            <div class="experience-intro reveal">
+
+                <div class="section-label">
+                    Professional Experience
+                </div>
+
+                <h2 class="section-title">
+
+                    Building talent pipelines<br>
+                    that create impact.
+
+                </h2>
+
+                <p class="section-description">
+
+                    Experience across IT, BFSI and technical
+                    recruitment, working with candidates,
+                    clients, hiring managers and stakeholders
+                    throughout the recruitment lifecycle.
+
+                </p>
 
             </div>
 
 
-        </footer>
-
-    </div>
-
-</section>
+            <div class="experience-timeline">
 
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================== -->
+                <!-- =================================================
+                     JOVE HR SERVICES
+                ================================================== -->
 
-<script>
+                <div class="experience-item reveal">
+
+                    <div class="experience-dot"></div>
 
 
-    /* =========================================================
-       PRELOADER
-    ========================================================== */
+                    <div class="company-logo">
 
-    window.addEventListener("load", function () {
+                        <img src="Images/Jove.png"
+                             alt="Jove HR Services">
 
-        const preloader =
-            document.getElementById("preloader");
+                    </div>
 
-        setTimeout(function () {
 
-            preloader.style.opacity = "0";
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3 class="experience-role">
+                                Recruitment Associate
+                            </h3>
+
+                            <p class="experience-company">
+                                Jove HR Services Pvt. Ltd.
+                            </p>
+
+                        </div>
+
+
+                        <span class="experience-date">
+                            Jan 2026 – Present
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-content">
+
+                        <ul>
+
+                            <li>
+                                Manage end-to-end recruitment for
+                                BFSI and IT industry positions,
+                                ensuring timely delivery against
+                                client hiring requirements.
+                            </li>
+
+                            <li>
+                                Source and attract candidates through
+                                Naukri, LinkedIn, job portals, employee
+                                referrals and internal databases.
+                            </li>
+
+                            <li>
+                                Screen and evaluate candidate profiles
+                                through telephonic interviews to assess
+                                technical competencies, domain expertise,
+                                communication skills and overall role fit.
+                            </li>
+
+                            <li>
+                                Coordinate interviews between candidates,
+                                hiring managers and clients while ensuring
+                                a seamless recruitment process.
+                            </li>
+
+                            <li>
+                                Build and maintain strong relationships
+                                with stakeholders and candidates throughout
+                                the hiring lifecycle, from sourcing to offer
+                                rollout and onboarding coordination.
+                            </li>
+
+                            <li>
+                                Maintain candidate pipelines, recruitment
+                                trackers and databases to ensure efficient
+                                follow-ups and accurate hiring records.
+                            </li>
+
+                            <li>
+                                Collaborate with hiring managers to understand
+                                role requirements, define sourcing strategies
+                                and deliver quality talent within agreed
+                                timelines.
+                            </li>
+
+                        </ul>
+
+
+                        <div class="roles-section">
+
+                            <div class="roles-heading">
+
+                                <span class="roles-title">
+                                    Roles Recruited For
+                                </span>
+
+                                <span class="roles-hint">
+
+                                    <i class='bx bx-move-horizontal'></i>
+
+                                    Hover to pause
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="roles-slider">
+
+                                <div class="roles-track">
+
+
+                                    <!-- SET ONE -->
+
+                                    <span class="role-tag">Accounts Payable</span>
+                                    <span class="role-tag">Accounts Receivable</span>
+                                    <span class="role-tag">Regional Sales Manager</span>
+                                    <span class="role-tag">HR Partner</span>
+                                    <span class="role-tag">Regional Head</span>
+                                    <span class="role-tag">Credit Manager</span>
+                                    <span class="role-tag">Credit Manager – Step Loan</span>
+                                    <span class="role-tag">BDM – Step Loan</span>
+                                    <span class="role-tag">BDM</span>
+                                    <span class="role-tag">Sales Manager</span>
+                                    <span class="role-tag">Area Sales Manager</span>
+                                    <span class="role-tag">Cluster Sales Manager</span>
+                                    <span class="role-tag">Zonal Head</span>
+                                    <span class="role-tag">Grievance Manager / Nodal Officer</span>
+                                    <span class="role-tag">DevOps Engineer</span>
+                                    <span class="role-tag">Business Operations Coordinator</span>
+                                    <span class="role-tag">Risk Analyst</span>
+                                    <span class="role-tag">Head of Operations</span>
+                                    <span class="role-tag">Collection Manager</span>
+                                    <span class="role-tag">Business Analyst</span>
+                                    <span class="role-tag">IT Auditor</span>
+                                    <span class="role-tag">Personal Assistant</span>
+                                    <span class="role-tag">Treasury Manager</span>
+                                    <span class="role-tag">Executive Assistant</span>
+                                    <span class="role-tag">Company Secretary</span>
+                                    <span class="role-tag">CTO</span>
+                                    <span class="role-tag">Head of Engineering</span>
+                                    <span class="role-tag">HRBP</span>
+                                    <span class="role-tag">CA Fresher</span>
+                                    <span class="role-tag">Branch Sales Manager – Commercial Vehicles</span>
+                                    <span class="role-tag">BSM – HL</span>
+                                    <span class="role-tag">Desktop Support Engineer</span>
+                                    <span class="role-tag">Insurance Manager</span>
+                                    <span class="role-tag">Application Support</span>
+                                    <span class="role-tag">DVP – IT</span>
+                                    <span class="role-tag">Lead Management Support</span>
+                                    <span class="role-tag">AVP – IT</span>
+                                    <span class="role-tag">Application Configurator</span>
+                                    <span class="role-tag">CEO Office</span>
+                                    <span class="role-tag">HR Admin</span>
+                                    <span class="role-tag">Branch Credit Manager</span>
+                                    <span class="role-tag">Area Credit Manager</span>
+                                    <span class="role-tag">Full Stack Engineer</span>
+                                    <span class="role-tag">Product Manager</span>
+                                    <span class="role-tag">VP – Investment Banking</span>
+                                    <span class="role-tag">Legal Manager</span>
+
+
+                                    <!-- DUPLICATE -->
+
+                                    <span class="role-tag">Accounts Payable</span>
+                                    <span class="role-tag">Accounts Receivable</span>
+                                    <span class="role-tag">Regional Sales Manager</span>
+                                    <span class="role-tag">HR Partner</span>
+                                    <span class="role-tag">Regional Head</span>
+                                    <span class="role-tag">Credit Manager</span>
+                                    <span class="role-tag">Credit Manager – Step Loan</span>
+                                    <span class="role-tag">BDM – Step Loan</span>
+                                    <span class="role-tag">BDM</span>
+                                    <span class="role-tag">Sales Manager</span>
+                                    <span class="role-tag">Area Sales Manager</span>
+                                    <span class="role-tag">Cluster Sales Manager</span>
+                                    <span class="role-tag">Zonal Head</span>
+                                    <span class="role-tag">Grievance Manager / Nodal Officer</span>
+                                    <span class="role-tag">DevOps Engineer</span>
+                                    <span class="role-tag">Business Operations Coordinator</span>
+                                    <span class="role-tag">Risk Analyst</span>
+                                    <span class="role-tag">Head of Operations</span>
+                                    <span class="role-tag">Collection Manager</span>
+                                    <span class="role-tag">Business Analyst</span>
+                                    <span class="role-tag">IT Auditor</span>
+                                    <span class="role-tag">Personal Assistant</span>
+                                    <span class="role-tag">Treasury Manager</span>
+                                    <span class="role-tag">Executive Assistant</span>
+                                    <span class="role-tag">Company Secretary</span>
+                                    <span class="role-tag">CTO</span>
+                                    <span class="role-tag">Head of Engineering</span>
+                                    <span class="role-tag">HRBP</span>
+                                    <span class="role-tag">CA Fresher</span>
+                                    <span class="role-tag">Branch Sales Manager – Commercial Vehicles</span>
+                                    <span class="role-tag">BSM – HL</span>
+                                    <span class="role-tag">Desktop Support Engineer</span>
+                                    <span class="role-tag">Insurance Manager</span>
+                                    <span class="role-tag">Application Support</span>
+                                    <span class="role-tag">DVP – IT</span>
+                                    <span class="role-tag">Lead Management Support</span>
+                                    <span class="role-tag">AVP – IT</span>
+                                    <span class="role-tag">Application Configurator</span>
+                                    <span class="role-tag">CEO Office</span>
+                                    <span class="role-tag">HR Admin</span>
+                                    <span class="role-tag">Branch Credit Manager</span>
+                                    <span class="role-tag">Area Credit Manager</span>
+                                    <span class="role-tag">Full Stack Engineer</span>
+                                    <span class="role-tag">Product Manager</span>
+                                    <span class="role-tag">VP – Investment Banking</span>
+                                    <span class="role-tag">Legal Manager</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     EMONICS
+                ================================================== -->
+
+                <div class="experience-item reveal">
+
+                    <div class="experience-dot"></div>
+
+
+                    <div class="company-logo">
+
+                        <img src="Images/Emonics LLC.webp"
+                             alt="Emonics LLC">
+
+                    </div>
+
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3 class="experience-role">
+                                IT Recruiter
+                            </h3>
+
+                            <p class="experience-company">
+                                Emonics LLC
+                            </p>
+
+                        </div>
+
+
+                        <span class="experience-date">
+                            Jan 2025 – Sep 2025
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-content">
+
+                        <ul>
+
+                            <li>
+                                Managed full-cycle recruitment for
+                                US-based clients across a wide range
+                                of technical positions.
+                            </li>
+
+                            <li>
+                                Sourced qualified candidates through
+                                Dice, Monster, CareerBuilder, Indeed,
+                                LinkedIn and internal databases using
+                                various sourcing techniques.
+                            </li>
+
+                            <li>
+                                Screened and evaluated technical resumes
+                                based on required skills, experience and
+                                project fit across Java, Python, DevOps,
+                                Cloud and Full Stack Development.
+                            </li>
+
+                            <li>
+                                Conducted initial screening calls to assess
+                                technical expertise, communication skills,
+                                work authorization, visa status, availability
+                                and compensation expectations.
+                            </li>
+
+                            <li>
+                                Coordinated interviews with hiring managers
+                                and clients, ensuring timely feedback and
+                                effective candidate communication.
+                            </li>
+
+                            <li>
+                                Negotiated pay rates and employment terms,
+                                including W2, C2C and 1099 engagements,
+                                while ensuring compliance with client
+                                requirements.
+                            </li>
+
+                            <li>
+                                Managed onboarding activities including
+                                documentation, joining formalities and
+                                post-placement consultant support.
+                            </li>
+
+                            <li>
+                                Built and maintained strong relationships
+                                with consultants, clients and hiring managers
+                                to develop a robust talent pipeline.
+                            </li>
+
+                            <li>
+                                Collaborated with implementation partners
+                                and vendors to source niche technical talent,
+                                maintain vendor relationships and support
+                                timely fulfillment of client requirements.
+                            </li>
+
+                        </ul>
+
+
+                        <div class="roles-section">
+
+                            <div class="roles-heading">
+
+                                <span class="roles-title">
+                                    Roles Recruited For
+                                </span>
+
+                                <span class="roles-hint">
+
+                                    <i class='bx bx-move-horizontal'></i>
+
+                                    Hover to pause
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="roles-slider">
+
+                                <div class="roles-track">
+
+                                    <span class="role-tag">Software Developer</span>
+                                    <span class="role-tag">Full Stack Developer</span>
+                                    <span class="role-tag">Data Analyst</span>
+                                    <span class="role-tag">Machine Learning Engineer</span>
+                                    <span class="role-tag">DevOps Engineer</span>
+                                    <span class="role-tag">Cloud Engineer</span>
+                                    <span class="role-tag">QA Engineer</span>
+                                    <span class="role-tag">Mechanical Engineer</span>
+                                    <span class="role-tag">IT Engineering</span>
+
+                                    <span class="role-tag">Software Developer</span>
+                                    <span class="role-tag">Full Stack Developer</span>
+                                    <span class="role-tag">Data Analyst</span>
+                                    <span class="role-tag">Machine Learning Engineer</span>
+                                    <span class="role-tag">DevOps Engineer</span>
+                                    <span class="role-tag">Cloud Engineer</span>
+                                    <span class="role-tag">QA Engineer</span>
+                                    <span class="role-tag">Mechanical Engineer</span>
+                                    <span class="role-tag">IT Engineering</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     LUCIA
+                ================================================== -->
+
+                <div class="experience-item reveal">
+
+                    <div class="experience-dot"></div>
+
+
+                    <div class="company-logo">
+
+                        <img src="Images/Lucia Enterprises.webp"
+                             alt="Lucia Enterprises">
+
+                    </div>
+
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3 class="experience-role">
+                                HR Executive Trainee
+                            </h3>
+
+                            <p class="experience-company">
+                                Lucia Enterprises
+                            </p>
+
+                        </div>
+
+
+                        <span class="experience-date">
+                            Oct 2024 – Dec 2024
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-content">
+
+                        <ul>
+
+                            <li>
+                                Handled end-to-end recruitment for
+                                multiple client requirements.
+                            </li>
+
+                            <li>
+                                Screened and evaluated candidates to
+                                identify the best fit for each role.
+                            </li>
+
+                            <li>
+                                Coordinated and scheduled interviews
+                                efficiently between clients and candidates.
+                            </li>
+
+                            <li>
+                                Communicated with candidates regarding
+                                interest, availability and role suitability.
+                            </li>
+
+                            <li>
+                                Maintained strong candidate relationships
+                                to ensure a smooth hiring experience.
+                            </li>
+
+                            <li>
+                                Managed recruitment trackers and ensured
+                                timely closures of positions.
+                            </li>
+
+                        </ul>
+
+
+                        <div class="roles-section">
+
+                            <div class="roles-heading">
+
+                                <span class="roles-title">
+                                    Roles Recruited For
+                                </span>
+
+                                <span class="roles-hint">
+
+                                    <i class='bx bx-move-horizontal'></i>
+
+                                    Hover to pause
+
+                                </span>
+
+                            </div>
+
+
+                            <div class="roles-slider">
+
+                                <div class="roles-track">
+
+                                    <span class="role-tag">ASM</span>
+                                    <span class="role-tag">Presales Executive</span>
+                                    <span class="role-tag">Project Manager</span>
+                                    <span class="role-tag">Civil Engineer</span>
+                                    <span class="role-tag">Site Engineer</span>
+                                    <span class="role-tag">2D / 3D Designer</span>
+
+                                    <span class="role-tag">ASM</span>
+                                    <span class="role-tag">Presales Executive</span>
+                                    <span class="role-tag">Project Manager</span>
+                                    <span class="role-tag">Civil Engineer</span>
+                                    <span class="role-tag">Site Engineer</span>
+                                    <span class="role-tag">2D / 3D Designer</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         STATS
+    ========================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="stats reveal">
+
+
+                <div class="stat">
+
+                    <div class="stat-number"
+                         data-target="3">
+                        0
+                    </div>
+
+                    <p>
+                        Recruitment Organizations
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-number"
+                         data-target="2">
+                        0
+                    </div>
+
+                    <p>
+                        Core Hiring Domains
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-number"
+                         data-target="50">
+                        0
+                    </div>
+
+                    <p>
+                        Role Categories Handled+
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-number"
+                         data-target="100">
+                        0
+                    </div>
+
+                    <p>
+                        Recruitment Lifecycle %
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CERTIFICATIONS
+    ========================================================== -->
+
+    <section id="certifications">
+
+        <div class="container">
+
+
+            <div class="experience-intro reveal">
+
+                <div class="section-label">
+                    Certifications
+                </div>
+
+
+                <h2 class="section-title">
+
+                    Continuous learning.<br>
+                    Professional growth.
+
+                </h2>
+
+
+                <p class="section-description">
+
+                    Professional certifications and credentials that
+                    complement my experience in Talent Acquisition,
+                    recruitment and HR.
+
+                </p>
+
+            </div>
+
+
+            <div class="cert-slider-wrapper reveal">
+
+                <button class="cert-nav-btn cert-prev" id="certPrevBtn">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+                <button class="cert-nav-btn cert-next" id="certNextBtn">
+                    <i class='bx bx-chevron-right'></i>
+                </button>
+
+                <div class="cert-slider-track" id="certTrack">
+
+                    <!-- SLIDE 1: REAL KEKA CERTIFICATE -->
+                    <div class="cert-slide">
+                        <div class="real-certificate-card">
+                            <div class="cert-keka-wrapper">
+                                <div class="cert-keka-header">
+                                    <div class="keka-logo-text">
+                                        keka<span>.</span>
+                                    </div>
+                                </div>
+
+                                <div class="cert-keka-banner">
+                                    <div class="cert-badge-seal">
+                                        <div class="stars">★ ★ ★</div>
+                                        <div class="certified-text">CERTIFIED</div>
+                                        <div class="stars">★ ★ ★</div>
+                                    </div>
+                                    <div class="cert-banner-text">
+                                        <h2>Employee Engagement</h2>
+                                        <h1>Certification</h1>
+                                    </div>
+                                </div>
+
+                                <div class="cert-keka-body">
+                                    <div class="cert-divider-line"></div>
+                                    <div class="cert-recipient-name">
+                                        Sarvesh Patkar
+                                    </div>
+                                    <p class="cert-award-text">
+                                        is hereby awarded this certificate of achievement for the successful completion of the <strong>Employee Engagement</strong> certification exams.
+                                    </p>
+                                </div>
+
+                                <div class="cert-keka-footer">
+                                    <div class="cert-partner-logos">
+                                        <div class="k-academy-logo">
+                                            <span class="k-symbol">k</span> Academy
+                                        </div>
+                                        <span class="partner-text">in partnership with</span>
+                                        <div class="ee-academy-logo">
+                                            <span class="ee-title">EMPLOYEE ENGAGEMENT</span>
+                                            <span class="ee-sub">ACADEMY</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cert-action-bar">
+                                <div class="cert-meta-info">
+                                    <div class="cert-meta-item">
+                                        <span>Issued Date</span>
+                                        <strong>August 31, 2026</strong>
+                                    </div>
+                                    <div class="cert-meta-item">
+                                        <span>Credential ID</span>
+                                        <strong>13EEAD954-139407D89</strong>
+                                    </div>
+                                </div>
+                                <a href="https://academy.keka.com/all-achievement-verification?avsid=13EEAD954-139407D89"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn btn-primary" style="padding: 10px 18px; font-size: 0.75rem;">
+                                    Verify Credential
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2: ADDITIONAL CERTIFICATE PLACEHOLDER -->
+                    <div class="cert-slide">
+                        <div class="real-certificate-card">
+                            <div class="cert-keka-wrapper">
+                                <div class="cert-keka-header">
+                                    <div class="keka-logo-text">
+                                        keka<span>.</span>
+                                    </div>
+                                </div>
+
+                                <div class="cert-keka-banner">
+                                    <div class="cert-badge-seal">
+                                        <div class="stars">★ ★ ★</div>
+                                        <div class="certified-text">CERTIFIED</div>
+                                        <div class="stars">★ ★ ★</div>
+                                    </div>
+                                    <div class="cert-banner-text">
+                                        <h2>HR Analytics & Strategy</h2>
+                                        <h1>Certification</h1>
+                                    </div>
+                                </div>
+
+                                <div class="cert-keka-body">
+                                    <div class="cert-divider-line"></div>
+                                    <div class="cert-recipient-name">
+                                        Sarvesh Patkar
+                                    </div>
+                                    <p class="cert-award-text">
+                                        is hereby awarded this certificate of achievement for the successful completion of the <strong>HR Analytics & Strategy</strong> certification exams.
+                                    </p>
+                                </div>
+
+                                <div class="cert-keka-footer">
+                                    <div class="cert-partner-logos">
+                                        <div class="k-academy-logo">
+                                            <span class="k-symbol">k</span> Academy
+                                        </div>
+                                        <span class="partner-text">in partnership with</span>
+                                        <div class="ee-academy-logo">
+                                            <span class="ee-title">EMPLOYEE ENGAGEMENT</span>
+                                            <span class="ee-sub">ACADEMY</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cert-action-bar">
+                                <div class="cert-meta-info">
+                                    <div class="cert-meta-item">
+                                        <span>Issued Date</span>
+                                        <strong>August 2026</strong>
+                                    </div>
+                                    <div class="cert-meta-item">
+                                        <span>Credential ID</span>
+                                        <strong>13EEAD954-139407D90</strong>
+                                    </div>
+                                </div>
+                                <a href="https://academy.keka.com"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn btn-primary" style="padding: 10px 18px; font-size: 0.75rem;">
+                                    Verify Credential
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cert-dots" id="certDots"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CONTACT
+    ========================================================== -->
+
+    <section id="contact">
+
+        <div class="container">
+
+
+            <div class="contact-grid">
+
+
+                <div class="reveal">
+
+
+                    <div class="section-label">
+                        Contact
+                    </div>
+
+
+                    <h2 class="section-title">
+                        Let's connect.
+                    </h2>
+
+
+                    <p class="section-description">
+
+                        Whether you're looking for recruitment
+                        support, discussing an opportunity or
+                        simply want to connect, feel free to
+                        reach out.
+
+                    </p>
+
+
+                    <div class="contact-info">
+
+
+                        <a class="contact-item"
+                           href="mailto:sarveshpatkar2810@gmail.com">
+
+                            <i class='bx bx-envelope'></i>
+
+                            <div>
+
+                                <span>
+                                    Email
+                                </span>
+
+                                <p>
+                                    sarveshpatkar2810@gmail.com
+                                </p>
+
+                            </div>
+
+                        </a>
+
+
+                        <a class="contact-item"
+                           href="tel:+918830806054">
+
+                            <i class='bx bx-phone'></i>
+
+                            <div>
+
+                                <span>
+                                    Phone
+                                </span>
+
+                                <p>
+                                    +91 88308 06054
+                                </p>
+
+                            </div>
+
+                        </a>
+
+
+                        <div class="contact-item">
+
+                            <i class='bx bx-map'></i>
+
+                            <div>
+
+                                <span>
+                                    Location
+                                </span>
+
+                                <p>
+                                    Thane, Mumbai, India
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="social-icons">
+
+
+                        <a href="https://www.linkedin.com/in/sarvesh-patkar2810"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+
+                            <i class='bx bxl-linkedin'></i>
+
+                        </a>
+
+
+                        <a href="mailto:sarveshpatkar2810@gmail.com"
+                           aria-label="Email">
+
+                            <i class='bx bx-envelope'></i>
+
+                        </a>
+
+
+                        <a href="tel:+918830806054"
+                           aria-label="Phone">
+
+                            <i class='bx bx-phone'></i>
+
+                        </a>
+
+
+                    </div>
+
+
+                    <br>
+
+
+                    <a href="Sarvesh%20-%20Recruitment%20Associate.pdf"
+                       download
+                       class="btn btn-primary">
+
+                        Download CV
+
+                        <i class='bx bx-download'></i>
+
+                    </a>
+
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+
+                <div class="contact-form reveal">
+
+
+                    <form name="submit-to-google-sheet">
+
+
+                        <div class="form-group">
+
+                            <input type="text"
+                                   name="Name"
+                                   placeholder="Your Name"
+                                   required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <input type="email"
+                                   name="Email"
+                                   placeholder="Your Email"
+                                   required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <input type="text"
+                                   name="Subject"
+                                   placeholder="Subject">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <textarea name="Message"
+                                      placeholder="Your Message"
+                                      required></textarea>
+
+                        </div>
+
+
+                        <button type="submit"
+                                class="btn btn-primary">
+
+                            Send Message
+
+                            <i class="bx bx-send"></i>
+
+                        </button>
+
+
+                        <span id="msg"></span>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <section style="padding:0 0 25px;">
+
+        <div class="container">
+
+            <footer>
+
+
+                <p>
+
+                    © <span id="year"></span>
+
+                    Sarvesh Patkar.
+
+                    All rights reserved.
+
+                </p>
+
+
+                <div class="footer-links">
+
+                    <a href="#home">
+                        Home
+                    </a>
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                    <a href="#skills">
+                        Skills
+                    </a>
+
+                    <a href="#experience">
+                        Experience
+                    </a>
+
+                    <a href="#certifications">
+                        Certifications
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                </div>
+
+
+            </footer>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+
+
+        /* =========================================================
+           PRELOADER
+        ========================================================== */
+
+        window.addEventListener("load", function () {
+
+            const preloader =
+                document.getElementById("preloader");
 
             setTimeout(function () {
 
-                preloader.style.display = "none";
+                preloader.style.opacity = "0";
 
-            }, 700);
+                setTimeout(function () {
 
-        }, 900);
+                    preloader.style.display = "none";
 
-    });
+                }, 700);
 
+            }, 900);
 
-
-    /* =========================================================
-       MOBILE MENU
-    ========================================================== */
-
-    const menuBtn =
-        document.getElementById("menuBtn");
-
-    const closeMenu =
-        document.getElementById("closeMenu");
-
-    const mobileMenu =
-        document.getElementById("mobileMenu");
-
-    const mobileLinks =
-        document.querySelectorAll(
-            ".mobile-menu a"
-        );
+        });
 
 
-    menuBtn.addEventListener("click", function () {
+        /* =========================================================
+           MOBILE MENU
+        ========================================================== */
 
-        mobileMenu.classList.add("open");
+        const menuBtn =
+            document.getElementById("menuBtn");
 
-        document.body.classList.add("menu-open");
+        const closeMenu =
+            document.getElementById("closeMenu");
 
-    });
+        const mobileMenu =
+            document.getElementById("mobileMenu");
 
-
-    closeMenu.addEventListener("click", function () {
-
-        mobileMenu.classList.remove("open");
-
-        document.body.classList.remove("menu-open");
-
-    });
-
-
-    mobileLinks.forEach(function (link) {
-
-        link.addEventListener(
-            "click",
-            function () {
-
-                mobileMenu.classList.remove("open");
-
-                document.body.classList.remove(
-                    "menu-open"
-                );
-
-            }
-        );
-
-    });
+        const mobileLinks =
+            document.querySelectorAll(
+                ".mobile-menu a"
+            );
 
 
+        menuBtn.addEventListener("click", function () {
 
-    /* =========================================================
-       ESCAPE KEY
-    ========================================================== */
+            mobileMenu.classList.add("open");
 
-    document.addEventListener(
-        "keydown",
-        function (event) {
+            document.body.classList.add("menu-open");
 
-            if (event.key === "Escape") {
-
-                mobileMenu.classList.remove("open");
-
-                document.body.classList.remove(
-                    "menu-open"
-                );
-
-            }
-
-        }
-    );
+        });
 
 
+        closeMenu.addEventListener("click", function () {
 
-    /* =========================================================
-       NAVBAR SCROLL
-    ========================================================== */
+            mobileMenu.classList.remove("open");
 
-    const header =
-        document.getElementById("header");
+            document.body.classList.remove("menu-open");
 
-
-    window.addEventListener(
-        "scroll",
-        function () {
-
-            if (window.scrollY > 50) {
-
-                header.classList.add("scrolled");
-
-            } else {
-
-                header.classList.remove("scrolled");
-
-            }
-
-        }
-    );
+        });
 
 
+        mobileLinks.forEach(function (link) {
 
-    /* =========================================================
-       ACTIVE NAVIGATION
-    ========================================================== */
+            link.addEventListener(
+                "click",
+                function () {
 
-    const sections =
-        document.querySelectorAll(
-            "section[id]"
-        );
+                    mobileMenu.classList.remove("open");
 
-    const navItems =
-        document.querySelectorAll(
-            ".nav-links a"
-        );
-
-
-    window.addEventListener(
-        "scroll",
-        function () {
-
-            let current = "";
-
-            sections.forEach(
-                function (section) {
-
-                    const sectionTop =
-                        section.offsetTop - 160;
-
-                    if (
-                        window.scrollY >= sectionTop
-                    ) {
-
-                        current =
-                            section.getAttribute(
-                                "id"
-                            );
-
-                    }
+                    document.body.classList.remove(
+                        "menu-open"
+                    );
 
                 }
             );
 
+        });
 
-            navItems.forEach(
-                function (link) {
 
-                    link.classList.remove(
-                        "active"
+        /* =========================================================
+           ESCAPE KEY
+        ========================================================== */
+
+        document.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (event.key === "Escape") {
+
+                    mobileMenu.classList.remove("open");
+
+                    document.body.classList.remove(
+                        "menu-open"
                     );
 
+                }
 
-                    if (
-                        link.getAttribute("href") ===
-                        "#" + current
-                    ) {
+            }
+        );
 
-                        link.classList.add(
+
+        /* =========================================================
+           NAVBAR SCROLL
+        ========================================================== */
+
+        const header =
+            document.getElementById("header");
+
+
+        window.addEventListener(
+            "scroll",
+            function () {
+
+                if (window.scrollY > 50) {
+
+                    header.classList.add("scrolled");
+
+                } else {
+
+                    header.classList.remove("scrolled");
+
+                }
+
+            }
+        );
+
+
+        /* =========================================================
+           ACTIVE NAVIGATION
+        ========================================================== */
+
+        const sections =
+            document.querySelectorAll(
+                "section[id]"
+            );
+
+        const navItems =
+            document.querySelectorAll(
+                ".nav-links a"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            function () {
+
+                let current = "";
+
+                sections.forEach(
+                    function (section) {
+
+                        const sectionTop =
+                            section.offsetTop - 160;
+
+                        if (
+                            window.scrollY >= sectionTop
+                        ) {
+
+                            current =
+                                section.getAttribute("id");
+
+                        }
+
+                    }
+                );
+
+
+                navItems.forEach(
+                    function (link) {
+
+                        link.classList.remove(
                             "active"
                         );
 
-                    }
-
-                }
-            );
-
-        }
-    );
-
-
-
-    /* =========================================================
-       SCROLL REVEAL
-    ========================================================== */
-
-    const revealElements =
-        document.querySelectorAll(
-            ".reveal"
-        );
-
-
-    const revealObserver =
-        new IntersectionObserver(
-
-            function (entries) {
-
-                entries.forEach(
-                    function (entry) {
 
                         if (
-                            entry.isIntersecting
+                            link.getAttribute("href") ===
+                            "#" + current
                         ) {
 
-                            entry.target.classList.add(
+                            link.classList.add(
                                 "active"
-                            );
-
-                            revealObserver.unobserve(
-                                entry.target
                             );
 
                         }
@@ -4965,240 +4511,399 @@
                     }
                 );
 
-            },
-
-            {
-                threshold: 0.12
             }
-
         );
 
 
-    revealElements.forEach(
-        function (element) {
+        /* =========================================================
+           SCROLL REVEAL
+        ========================================================== */
 
-            revealObserver.observe(element);
-
-        }
-    );
-
-
-
-    /* =========================================================
-       CURSOR GLOW
-    ========================================================== */
-
-    const cursorGlow =
-        document.querySelector(
-            ".cursor-glow"
-        );
+        const revealElements =
+            document.querySelectorAll(
+                ".reveal"
+            );
 
 
-    document.addEventListener(
-        "mousemove",
-        function (event) {
+        const revealObserver =
+            new IntersectionObserver(
 
-            cursorGlow.style.left =
-                event.clientX + "px";
+                function (entries) {
 
-            cursorGlow.style.top =
-                event.clientY + "px";
+                    entries.forEach(
+                        function (entry) {
 
-        }
-    );
+                            if (
+                                entry.isIntersecting
+                            ) {
 
-
-
-    /* =========================================================
-       COUNTER ANIMATION
-    ========================================================== */
-
-    const counters =
-        document.querySelectorAll(
-            ".stat-number"
-        );
-
-
-    const counterObserver =
-        new IntersectionObserver(
-
-            function (entries) {
-
-                entries.forEach(
-                    function (entry) {
-
-                        if (
-                            entry.isIntersecting
-                        ) {
-
-                            const counter =
-                                entry.target;
-
-                            const target =
-                                Number(
-                                    counter.dataset.target
+                                entry.target.classList.add(
+                                    "active"
                                 );
 
-                            let count = 0;
+                                revealObserver.unobserve(
+                                    entry.target
+                                );
 
-                            const duration = 1400;
+                            }
 
-                            const steps =
-                                duration / 20;
+                        }
+                    );
 
-                            const increment =
-                                target / steps;
+                },
+
+                {
+                    threshold: 0.12
+                }
+
+            );
 
 
-                            function updateCounter() {
+        revealElements.forEach(
+            function (element) {
 
-                                count += increment;
+                revealObserver.observe(element);
+
+            }
+        );
 
 
-                                if (
-                                    count < target
-                                ) {
+        /* =========================================================
+           CURSOR GLOW
+        ========================================================== */
 
-                                    counter.textContent =
-                                        Math.ceil(count);
+        const cursorGlow =
+            document.querySelector(
+                ".cursor-glow"
+            );
 
-                                    setTimeout(
-                                        updateCounter,
-                                        20
+
+        document.addEventListener(
+            "mousemove",
+            function (event) {
+
+                cursorGlow.style.left =
+                    event.clientX + "px";
+
+                cursorGlow.style.top =
+                    event.clientY + "px";
+
+            }
+        );
+
+
+        /* =========================================================
+           COUNTER ANIMATION
+        ========================================================== */
+
+        const counters =
+            document.querySelectorAll(
+                ".stat-number"
+            );
+
+
+        const counterObserver =
+            new IntersectionObserver(
+
+                function (entries) {
+
+                    entries.forEach(
+                        function (entry) {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                const counter =
+                                    entry.target;
+
+                                const target =
+                                    Number(
+                                        counter.dataset.target
                                     );
 
-                                } else {
+                                let count = 0;
 
-                                    counter.textContent =
-                                        target;
+                                const duration = 1400;
+
+                                const steps =
+                                    duration / 20;
+
+                                const increment =
+                                    target / steps;
+
+
+                                function updateCounter() {
+
+                                    count += increment;
 
 
                                     if (
-                                        target === 50
+                                        count < target
                                     ) {
 
                                         counter.textContent =
-                                            target + "+";
+                                            Math.ceil(count);
+
+                                        setTimeout(
+                                            updateCounter,
+                                            20
+                                        );
+
+                                    } else {
+
+                                        counter.textContent =
+                                            target;
+
+
+                                        if (
+                                            target === 50
+                                        ) {
+
+                                            counter.textContent =
+                                                target + "+";
+
+                                        }
 
                                     }
 
                                 }
 
+
+                                updateCounter();
+
+
+                                counterObserver.unobserve(
+                                    counter
+                                );
+
                             }
 
-
-                            updateCounter();
-
-
-                            counterObserver.unobserve(
-                                counter
-                            );
-
                         }
+                    );
 
-                    }
-                );
+                },
 
-            },
+                {
+                    threshold: 0.6
+                }
 
-            {
-                threshold: 0.6
+            );
+
+
+        counters.forEach(
+            function (counter) {
+
+                counterObserver.observe(counter);
+
             }
-
         );
 
 
-    counters.forEach(
-        function (counter) {
+        /* =========================================================
+           CERTIFICATE SLIDER SCRIPT
+        ========================================================== */
 
-            counterObserver.observe(counter);
+        const certTrack = document.getElementById('certTrack');
+        const certSlides = document.querySelectorAll('.cert-slide');
+        const certPrevBtn = document.getElementById('certPrevBtn');
+        const certNextBtn = document.getElementById('certNextBtn');
+        const certDotsContainer = document.getElementById('certDots');
+
+        let certCurrentIndex = 0;
+
+        if (certSlides.length > 0) {
+            certSlides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('cert-dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToCertSlide(index));
+                certDotsContainer.appendChild(dot);
+            });
+
+            const certDots = document.querySelectorAll('.cert-dot');
+
+            function updateCertSlider() {
+                certTrack.style.transform = `translateX(-${certCurrentIndex * 100}%)`;
+                certDots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === certCurrentIndex);
+                });
+            }
+
+            function goToCertSlide(index) {
+                certCurrentIndex = index;
+                updateCertSlider();
+            }
+
+            certPrevBtn.addEventListener('click', () => {
+                certCurrentIndex = (certCurrentIndex > 0) ? certCurrentIndex - 1 : certSlides.length - 1;
+                updateCertSlider();
+            });
+
+            certNextBtn.addEventListener('click', () => {
+                certCurrentIndex = (certCurrentIndex < certSlides.length - 1) ? certCurrentIndex + 1 : 0;
+                updateCertSlider();
+            });
+        }
+
+
+        /* =========================================================
+           GOOGLE SHEETS + CONTACT FORM
+        ========================================================== */
+
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbzYL8ularLzes9T3Qc8vGYuT8BGon3muNogxkdmneIK19XTKRVU62SBFdGfhX-AXlVCfw/exec";
+
+
+        const form =
+            document.forms["submit-to-google-sheet"];
+
+
+        const msg =
+            document.getElementById("msg");
+
+
+        if (form) {
+
+            form.addEventListener(
+                "submit",
+                function (e) {
+
+                    e.preventDefault();
+
+
+                    const submitButton =
+                        form.querySelector(
+                            'button[type="submit"]'
+                        );
+
+
+                    const originalText =
+                        submitButton
+                            ? submitButton.innerHTML
+                            : "Send Message";
+
+
+                    if (submitButton) {
+
+                        submitButton.disabled = true;
+
+                        submitButton.innerHTML =
+                            '<i class="bx bx-loader-alt bx-spin"></i> Sending...';
+
+                    }
+
+
+                    if (msg) {
+
+                        msg.textContent =
+                            "Sending your message...";
+
+                        msg.style.color =
+                            "#9be7b0";
+
+                    }
+
+
+                    fetch(
+                        scriptURL,
+                        {
+                            method: "POST",
+
+                            mode: "no-cors",
+
+                            body:
+                                new FormData(form)
+                        }
+                    )
+
+                    .then(
+                        function () {
+
+                            if (msg) {
+
+                                msg.textContent =
+                                    "✓ Message sent successfully! I will get back to you soon.";
+
+                                msg.style.color =
+                                    "#9be7b0";
+
+                            }
+
+
+                            form.reset();
+
+
+                            setTimeout(
+                                function () {
+
+                                    if (msg) {
+
+                                        msg.textContent =
+                                            "";
+
+                                    }
+
+                                },
+                                7000
+                            );
+
+                        }
+                    )
+
+                    .catch(
+                        function (error) {
+
+                            console.error(
+                                "Contact form error:",
+                                error
+                            );
+
+
+                            if (msg) {
+
+                                msg.textContent =
+                                    "✕ Something went wrong. Please contact me directly by email or WhatsApp.";
+
+                                msg.style.color =
+                                    "#ff8a8a";
+
+                            }
+
+                        }
+                    )
+
+                    .finally(
+                        function () {
+
+                            if (submitButton) {
+
+                                submitButton.disabled =
+                                    false;
+
+                                submitButton.innerHTML =
+                                    originalText;
+
+                            }
+
+                        }
+                    );
+
+                }
+            );
 
         }
-    );
 
 
+        /* =========================================================
+           CURRENT YEAR
+        ========================================================== */
 
-    /* =========================================================
-       GOOGLE SHEETS + EMAIL CONTACT FORM
-    ========================================================== */
+        document.getElementById("year")
+            .textContent =
+            new Date().getFullYear();
 
-    const scriptURL =
-    "https://script.google.com/macros/s/AKfycbzYL8ularLzes9T3Qc8vGYuT8BGon3muNogxkdmneIK19XTKRVU62SBFdGfhX-AXlVCfw/exec";
-
-    const form =
-        document.forms["submit-to-google-sheet"];
-
-    const msg =
-        document.getElementById("msg");
-
-    if (form) {
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const submitButton =
-                form.querySelector('button[type="submit"]');
-
-            const originalText =
-                submitButton ? submitButton.innerHTML : "Send Message";
-
-            if (submitButton) {
-                submitButton.disabled = true;
-                submitButton.innerHTML =
-                    '<i class="bx bx-loader-alt bx-spin"></i> Sending...';
-            }
-
-            if (msg) {
-                msg.textContent = "Sending your message...";
-                msg.style.color = "#9be7b0";
-            }
-
-            fetch(scriptURL, {
-                method: "POST",
-                mode: "no-cors",
-                body: new FormData(form)
-            })
-            .then(function () {
-                if (msg) {
-                    msg.textContent =
-                        "✓ Message sent successfully! I will get back to you soon.";
-                    msg.style.color = "#9be7b0";
-                }
-
-                form.reset();
-
-                setTimeout(function () {
-                    if (msg) msg.textContent = "";
-                }, 7000);
-            })
-            .catch(function (error) {
-                console.error("Contact form error:", error);
-
-                if (msg) {
-                    msg.textContent =
-                        "✕ Something went wrong. Please contact me directly by email or WhatsApp.";
-                    msg.style.color = "#ff8a8a";
-                }
-            })
-            .finally(function () {
-                if (submitButton) {
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = originalText;
-                }
-            });
-        });
-    }
-
-
-    /* =========================================================
-       CURRENT YEAR
-    ========================================================== */
-
-    document.getElementById("year")
-        .textContent =
-        new Date().getFullYear();
-
-
-</script>
+    </script>
 
 
 </body>
