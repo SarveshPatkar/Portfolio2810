@@ -4683,50 +4683,33 @@
         /* =========================================================
            CERTIFICATE SLIDER SCRIPT
         ========================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('certTrack');
+    const prevBtn = document.getElementById('certPrevBtn');
+    const nextBtn = document.getElementById('certNextBtn');
+    const slides = document.querySelectorAll('.cert-slide');
 
-        const certTrack = document.getElementById('certTrack');
-        const certSlides = document.querySelectorAll('.cert-slide');
-        const certPrevBtn = document.getElementById('certPrevBtn');
-        const certNextBtn = document.getElementById('certNextBtn');
-        const certDotsContainer = document.getElementById('certDots');
+    if (!track || !prevBtn || !nextBtn || slides.length === 0) return;
 
-        let certCurrentIndex = 0;
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    const gap = 30; // Matches CSS gap: 30px
 
-        if (certSlides.length > 0) {
-            certSlides.forEach((_, index) => {
-                const dot = document.createElement('div');
-                dot.classList.add('cert-dot');
-                if (index === 0) dot.classList.add('active');
-                dot.addEventListener('click', () => goToCertSlide(index));
-                certDotsContainer.appendChild(dot);
-            });
+    function updateSlider() {
+        // Shift by percentage + pixel gap offset
+        track.style.transform = `translateX(calc(-${currentIndex * 100}% - ${currentIndex * gap}px))`;
+    }
 
-            const certDots = document.querySelectorAll('.cert-dot');
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
+        updateSlider();
+    });
 
-            function updateCertSlider() {
-                certTrack.style.transform = `translateX(-${certCurrentIndex * 100}%)`;
-                certDots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === certCurrentIndex);
-                });
-            }
-
-            function goToCertSlide(index) {
-                certCurrentIndex = index;
-                updateCertSlider();
-            }
-
-            certPrevBtn.addEventListener('click', () => {
-                certCurrentIndex = (certCurrentIndex > 0) ? certCurrentIndex - 1 : certSlides.length - 1;
-                updateCertSlider();
-            });
-
-            certNextBtn.addEventListener('click', () => {
-                certCurrentIndex = (certCurrentIndex < certSlides.length - 1) ? certCurrentIndex + 1 : 0;
-                updateCertSlider();
-            });
-        }
-
-
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
+        updateSlider();
+    });
+});
         /* =========================================================
            GOOGLE SHEETS + CONTACT FORM
         ========================================================== */
